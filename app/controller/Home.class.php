@@ -30,9 +30,9 @@ class Pokela_Controller_Home extends Seaf_Controller
 
     public function indexAction( )
     {
-        if( !$this->getRequest( )->isMobile() )
+        if( $this->getRequest( )->isMobile() )
         {
-            if( !$this->getRequest()->isAu() )
+            if( $this->getRequest()->isAu() )
             {
                 $this->getFront()->forward('au');
             }

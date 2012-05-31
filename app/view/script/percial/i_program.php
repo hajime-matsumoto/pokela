@@ -10,7 +10,8 @@ $next_date = date("Y/m/d", strtotime("+2 month", $time) );
 <PARAM name="period" value="<?php echo $next_date;?>/14/59" valuetype="data">
 </OBJECT>
 ┗
-<A href="#fomacm.declaration.11.<?php echo $date.'.'.$idx;?>"><font size="2"><?php echo $date?> <?php echo $idx+1?> 聴く</font></A><br>
+<A href="#fomacm.declaration.11.<?php echo $date.'.'.$idx;?>"><font size="2">
+<?php echo date('n/j', $time)?> <?php echo $idx+1?> 聴く</font></A><br>
 <?php
 $idx++;
 endforeach;

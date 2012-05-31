@@ -28,7 +28,7 @@ HTML;
 $i=0; 
 foreach($up as $e){
     $i++;
-    $buttons .= "<li><a href=\"waxfiles/{$key}_{$i}.wax\"><img src=\"img/main/button_listen.gif\" alt=\"聴く！\" /></a><br />#{$e->getField01()}&nbsp;({$e->getField02()})</li>";
+    $buttons .= "<li><a href=\"program/wax/id/{$key}/num/{$i}\"><img src=\"img/main/button_listen.gif\" alt=\"聴く！\" /></a><br />#{$e->getField01()}&nbsp;({$e->getField02()})</li>";
 }
 $buttons .= <<<HTML
 </ul>
@@ -88,9 +88,9 @@ case 'tori':
                       <div id="tori-buttons">
                         <div id="tori-listen">
                           <ul>
-                            <li><a href="waxfiles/{$key}_1.wax"><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#{$up[0]->getField01()}&nbsp;({$up[0]->getField02()})</li>
-                            <li id="tori-seiyuu-od"><a href="http://pokela.jp/waxfiles/pf21_sp.wax"><img src="img/main/button_listen.gif" alt="聴く！" /></a><br /><nobr>オゥサキ・ドゥ・マドゥーイ</nobr></li>
-                            <li><a href="waxfiles/{$key}_2.wax"><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#{$up[1]->getField01()}&nbsp;({$up[1]->getField02()})</li>
+                            <li><a href="program/wax/id/{$key}/num/1"><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#{$up[0]->getField01()}&nbsp;({$up[0]->getField02()})</li>
+                            <li id="tori-seiyuu-od"><a href="program/wax/id/pf21/num/sp"><img src="img/main/button_listen.gif" alt="聴く！" /></a><br /><nobr>オゥサキ・ドゥ・マドゥーイ</nobr></li>
+                            <li><a href="program/wax/id/{$key}/num/2"><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#{$up[1]->getField01()}&nbsp;({$up[1]->getField02()})</li>
                           </ul>
                         </div><!-- end listen //-->
                       </div><!-- end buttons //-->
@@ -106,7 +106,7 @@ case 'mjs':
                       <div id="{$head}-buttons">
                         <div id="{$head}-listen">
                           <ul>
-                            <li><a href="waxfiles/{$key}_1.wax"><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#{$up[0]->getField01()}&nbsp;({$up[0]->getField02()})</li>
+                            <li><a href="program/wax/id/{$key}/num/1"><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#{$up[0]->getField01()}&nbsp;({$up[0]->getField02()})</li>
                             <!--<li><a href=""><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#YYY (YY/YY)</li>//-->
                           </ul>
                         </div><!-- end listen //-->
@@ -122,7 +122,7 @@ case 'dokudoku':
                       <div id="{$head}-buttons">
                         <div id="{$head}-listen">
                           <ul>
-                            <li><a href="waxfiles/{$key}_1.wax"><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#{$up[0]->getField01()}&nbsp;({$up[0]->getField02()})</li>
+                            <li><a href="program/wax/id/{$key}/num/1"><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#{$up[0]->getField01()}&nbsp;({$up[0]->getField02()})</li>
                             <!--<li><a href=""><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#YYY (YY/YY)</li>//-->
                           </ul>
                         </div><!-- end listen //-->

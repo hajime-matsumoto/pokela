@@ -74,7 +74,7 @@ VALUES ( NULL ,  '番組案内', CURRENT_TIMESTAMP), ( NULL ,  '更新案内', C
 INSERT INTO `pokela`.`pokela_blog_entry` (`id`, `blog_id`,`content`, `field01`, `field02`, `field03`, `field04`, `field05`, `field06`, `field07`, `field08`, `field09`, `field10`, `ts`) VALUES (NULL, 1, '<p>テレビ東京系６局ネットにて、毎週土曜日、朝10:30から放送中のTVアニメ『FAIRY TAIL』のラジオがいよいよスタート！</p><p>アニメ『FAIRY TAIL』の情報をお届けする他に、魔導士ギルドとしてリスナーのみんなからの質問や依頼に答えたりしながら、 更にみんなで『FAIRY TAIL』を盛り上げていこうというラジオ番組です。</p>', 'ft_logo.jpg', 
 	'FAIRY TAIL Webラジオ『魔導士ギルド放送局 やりすぎソーサラー！』', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, CURRENT_TIMESTAMP);
 INSERT INTO `pokela`.`pokela_blog_entry` (`id`, `blog_id`,`content`, `field01`, `field02`, `field03`, `field04`, `field05`, `field06`, `field07`, `field08`, `field09`, `field10`, `ts`) VALUES (NULL, 2, '更新31回目', '31', '5/4', 'FT_120504_31', NULL, NULL, NULL, NULL, NULL, NULL, NULL, CURRENT_TIMESTAMP);
-INSERT INTO `pokela`.`pokela_blog_entry` (`id`, `blog_id`,`content`, `field01`, `field02`, `field03`, `field04`, `field05`, `field06`, `field07`, `field08`, `field09`, `field10`, `ts`) VALUES (NULL, 2, '更新32回更新！
+INSERT INTO `pokela`.`pokela_blog_entry` (`id`, `blog_id`,`content`, `field01`, `field02`, `field03`, `field04`, `field05`, `field06`, `field07`, `field08`, `field09`, `field10`, `ts`) VALUES (NULL, 2, '第３２回更新！
 今回は公開録音の模様をお届け！！
 スペシャルなゲストも登場♪', '32', '5/18','FT_120518_32', NULL, NULL, NULL, NULL, NULL, NULL, NULL, CURRENT_TIMESTAMP);
 

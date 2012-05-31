@@ -4,6 +4,7 @@
 <meta name="vnd.up.bookmark" content="http://pokela.jp/" />
 <meta http-equiv="Cache-Control" content="no-cache" />
 <title>ぽけら</title>
+<?php echo $this->base(); ?>
 </head>
 <body bgcolor="#99CC33" text="#FFFFFF" link="#0000FF">
 <div align="center"> 
