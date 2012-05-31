@@ -9,6 +9,7 @@ $config['php']['ini']['display_errors'] = 1;
 $config['db']['name'] = 'visty_develop';
 
 
+ */
 
 // For Logger Settings
 $config['log']['reportingLevel'] = Seaf_Log::LEVEL_ALL;
@@ -27,7 +28,6 @@ $config['log']['handlers'] = array(
         'level' =>  Seaf_Log::LEVEL_ALL
     )
 );
- */
 
 
 return $config;
