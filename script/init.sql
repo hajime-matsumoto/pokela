@@ -111,10 +111,10 @@ VALUES
 	'<p>声優プロダクション「うぃなぁエンタテイメント」の「しろがねしょぉむ」と、ぷろだくしょんバオバブの声優「廣田詩夢」の凸凹コンビが、 声優になりたい人・声優好きの人に送る応援バラエティー番組！</p>',
 	'pvj_logo.jpg', 'しろがねしょぉむと廣田詩夢のPower Voice Jam!', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, CURRENT_TIMESTAMP);
 
-INSERT INTO `pokela`.`pokela_blog_entry` (`id`, `blog_id`,`content`, `field01`, `field02`, `field03`, `field04`, `field05`, `field06`, `field07`, `field08`, `field09`, `field10`, `ts`) VALUES (NULL, 2, '更新111回目', '137', '5/22', 'PVJ_120522_137', NULL, NULL, NULL, NULL, NULL, NULL, NULL, CURRENT_TIMESTAMP);
+INSERT INTO `pokela`.`pokela_blog_entry` (`id`, `blog_id`,`content`, `field01`, `field02`, `field03`, `field04`, `field05`, `field06`, `field07`, `field08`, `field09`, `field10`, `ts`) VALUES (NULL, 2, '更新111回目', '137', '5/22', 'PVJ_120522_137_net', NULL, NULL, NULL, NULL, NULL, NULL, NULL, CURRENT_TIMESTAMP);
 INSERT INTO `pokela`.`pokela_blog_entry` (`id`, `blog_id`,`content`, `field01`, `field02`, `field03`, `field04`, `field05`, `field06`, `field07`, `field08`, `field09`, `field10`, `ts`) VALUES (NULL, 2, '第１３８回更新！！
 引き続き、ゲストに「あきやまかおる」さんが登場！！'
-, '138', '5/29', 'PVJ_120529_138', NULL, NULL, NULL, NULL, NULL, NULL, NULL, CURRENT_TIMESTAMP);
+, '138', '5/29', 'PVJ_120529_138_net', NULL, NULL, NULL, NULL, NULL, NULL, NULL, CURRENT_TIMESTAMP);
 INSERT INTO `pokela`.`pokela_blog_category` (`id`, `type`, `entry_id`, `name`, `blog_id`, `ts`) VALUES (NULL, 'entry', '7', 'パワーボイスジャム', '1', CURRENT_TIMESTAMP);
 INSERT INTO `pokela`.`pokela_blog_category` (`id`, `type`, `entry_id`, `name`, `blog_id`, `ts`) VALUES (NULL, 'entry', '8', 'パワーボイスジャム', '2', CURRENT_TIMESTAMP);
 INSERT INTO `pokela`.`pokela_blog_category` (`id`, `type`, `entry_id`, `name`, `blog_id`, `ts`) VALUES (NULL, 'entry', '9', 'パワーボイスジャム', '2', CURRENT_TIMESTAMP);
