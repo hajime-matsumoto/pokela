@@ -1,0 +1,71 @@
+div#ft
+{
+	position : relative;
+	background : top url('../img/main/block_ft_top.gif') no-repeat;
+}
+div#ft-in
+{
+	padding : 47px 0px 13px 0px;
+	background : bottom url('../img/main/block_ft_bottom.gif') no-repeat;
+}
+div#ft-contents
+{
+	height : 440px;
+	background : url('../img/main/block_ft_contents_bg.gif') repeat-y;
+}
+div#ft-contents-in
+{
+	width : 210px;
+}
+div#ft-desc
+{
+	width : 200px;
+	position : absolute;
+	top : 150px;
+	left : 20px;
+}
+div#ft-contents p
+{
+	font-size : 1.1em;
+	letter-spacing : 0.2em;
+	line-height : 1.1em;
+}
+div#ft-comment
+{
+	position : absolute;
+	top : 340px;
+	left : 15px;
+}
+div#ft-buttons
+{
+	position : absolute;
+	top : 410px;
+	left : 15px;
+}
+div#ft-listen,
+div#ft-listen ul,
+{
+	width : 220px;
+	height : 50px;
+	margin : 0px auto;
+}
+div#ft-listen li
+{
+	float : left;
+	width : 100px;
+	padding-left : 5px;
+	text-align : center;
+	font-size : 1em;
+}
+div#ft-guide
+{
+	margin : 0px auto;
+	width : 80px;
+}
+div#ft-logo
+{
+	width : 168px;
+	position : absolute;
+	top : 60px;
+	left : 35px;
+}

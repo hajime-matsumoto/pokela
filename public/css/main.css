@@ -1,0 +1,323 @@
+/*
+ * 共通部分
+ */
+
+div#header,
+div#contents,
+div#footer
+{
+	width : 760px;
+	margin : 0px auto;
+	background : #FFFFFF;
+}
+div#header-in,
+div#contents-in,
+div#footer-in
+{
+	width : 752px;
+	margin : 0px auto;
+	background : #99CF21;
+}
+
+/*
+ * Header
+ */
+
+div#header-in
+{
+	position : relative;
+	height : 180px;
+	background : #99CF21 url(../img/main/top_bg.gif) no-repeat;
+}
+
+div#header-in div#top-logos
+{
+	height : 135px;
+}
+
+div#header-in img#top-logo
+{
+	margin-top : 9px;
+}
+
+div#header-in img#v_e_college
+{
+	position : absolute;
+	top : 23px;
+	left : 317px;
+}
+
+div#header-in img#top-caption
+{
+	position : absolute;
+	top : 112px;
+	right : 5px;
+	/*
+	margin-top : -17px;
+	margin-left : 270px;
+	*/
+	/*
+	float : right;
+	position : relative;
+	top : -17px;
+	left : -3px;
+	*/
+}
+
+div#header-in div#header-menu
+{
+	clear : right;
+	width : 740px;
+	height : 35px;
+	margin : 2px auto 0px auto;
+	background : url(../img/main/menu_bg.gif) no-repeat;
+}
+
+div#header-in div#header-menu ul
+{
+	height : 35px;
+}
+
+div#header-in div#header-menu ul li
+{
+	padding-left : 5px;
+	float : left;
+	background: left top url('../img/main/menu_sep.gif') no-repeat;
+	list-style : none;
+}
+
+div#header-in div#header-menu ul li:first-child
+{
+	background: none;
+}
+
+/*
+ * Contents
+ */
+
+div#contents-in
+{
+	/*height : 1620px;*/
+}
+
+/*
+ * Contents -> Info
+ */
+
+div#info,
+div#info-in
+{
+	width : 740px;
+	min-height : 1.2em;
+	margin : 0px auto;
+}
+
+div#info
+{
+	background : top url('../img/main/info_top.gif') no-repeat;
+	padding-top : 5px;
+	padding-bottom : 5px;
+}
+
+div#info-in
+{
+	background : #FFFFFF bottom url('../img/main/info_bottom.gif') no-repeat;
+}
+
+div#info-in p
+{
+	color : #333333;
+	line-height : 1.2em;
+}
+
+div#info-title
+{
+	padding : 5px;
+}
+div#info-title p
+{
+	text-align : center;
+	font-size : 16px;
+}
+div#info-contents
+{
+	padding : 5px;
+}
+div#info-contents p
+{
+	font-size : 12px;
+	letter-spacing : 0.1em;
+	margin-bottom : 15px;
+}
+div#info-author
+{
+	padding-right : 10px;
+	padding-bottom : 10px;
+}
+div#info-author p
+{
+	text-align : right;
+	font-size : 12px;
+}
+
+/*
+ * Contents -> Programs
+ */
+div#programs
+{
+	height : 1430px;
+}
+
+div#programs,
+div#programs-in
+{
+	width : 740px;
+	margin : 0px auto;
+}
+div#programs-left,
+div#programs-right-2column,
+div#programs-right-both
+{
+	margin-top : 5px;
+}
+
+div#programs-left
+{
+	float : left;
+	width : 240px;
+}
+div#programs-right-2column
+{
+	margin-left : 250px;
+	width : 490px;
+}
+div#programs-right-right
+{
+	float : right;
+	width : 240px;
+}
+div#programs-right-left
+{
+	width : 240px;
+}
+div#programs-right-both
+{
+	clear : right;
+	margin-left : 250px;
+	width : 490px;
+}
+
+/*
+ * Footer
+ */
+div#footer,
+div#footer-in
+{
+	position : relative;
+	height : 100px;
+}
+div#footer-link
+{
+	position : absolute;
+	top : 20px;
+	left : 456px;
+	/*
+	position : relative;
+	top : 37px;
+	left : 456px;
+	*/
+}
+
+div#footer-menu
+{
+	height : 35px;
+	width : 315px;
+	position : absolute;
+	top : 0px;
+	left : 10px;
+
+	/*
+	position : relative;
+	top : -40px;
+	left : 10px;
+	*/
+	background : right url('../img/main/footer_right.gif') no-repeat;
+}
+
+div#footer-menu ul li
+{
+	float : left;
+	padding-left : 5px;
+	background: left top url('../img/main/menu_sep.gif') no-repeat;
+}
+div#footer-menu ul li:first-child
+{
+	background : left top url('../img/main/footer_left.gif') no-repeat;
+}
+div#footer-copy
+{
+	position : absolute;
+	top : 45px;
+	left : 10px;
+}
+
+
+/*
+ * Comming soon 部分
+ */
+div#no
+{
+	background : top url('../img/main/block_no_top.gif') no-repeat;
+}
+div#no-in
+{
+	padding : 47px 0px 13px 0px;
+	background : bottom url('../img/main/block_no_bottom.gif') no-repeat;
+}
+div#no-contents
+{
+	height : 440px;
+	background : url('../img/main/block_no_contents_bg.gif') repeat-y;
+}
+div#no-contents p
+{
+	margin-left : 50px;
+	font-size : 
+}
+div#no-logo
+{
+	width : 160px;
+	margin : 0px auto;
+}
+
+/*
+ * ナルウザクスダ
+ */
+div#naruuza
+{
+	position : relative;
+	top : 10px;
+	width : 240px;
+	background : top url('../img/main/naruuza_top.gif') no-repeat;
+}
+div#naruuza-in
+{
+	padding : 13px 0px;
+	background : bottom url('../img/main/naruuza_bottom.gif') no-repeat;
+}
+div#naruuza-contents
+{
+	height : 260px;
+	background : url('../img/main/naruuza_contents_bg.gif') repeat-y;
+}
+div#naruuza-title
+{
+	position : absolute;
+	top : 10px;
+}
+div#naruuza-logo
+{
+	position : absolute;
+	top : 70px;
+	left : 15px;
+}

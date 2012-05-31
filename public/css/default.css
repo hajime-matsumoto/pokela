@@ -1,0 +1,21 @@
+html {
+	overflow-y:scroll;
+}
+
+body
+{
+	background : #D2FFF9;
+	width : 100%;
+	font-size : 12px;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+
+.mt10
+{
+	margin-top : 10px;
+}
+.mt12
+{
+	margin-top : 12px;
+}

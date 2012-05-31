@@ -1,0 +1,55 @@
+div#dokudoku
+{
+	position : relative;
+	top : 20px;
+	width : 490px;
+	background : top url('../img/main/block_dokudoku_top.gif') no-repeat;
+}
+div#dokudoku-in
+{
+	padding : 54px 0px 13px 0px;
+	background : bottom url('../img/main/block_dokudoku_bottom.gif') no-repeat;
+}
+div#dokudoku-contents
+{
+	position : relative;
+	height : 175px;
+	background : url('../img/main/block_dokudoku_contents_bg.gif') repeat-y;
+}
+div#dokudoku-logo
+{
+	position : absolute;
+	top : 40px;
+	left : 10px;
+}
+div#dokudoku-comment
+{
+	position : absolute;
+	top : 0px;
+	left : 20px;
+}
+div#dokudoku-desc
+{
+	position : absolute;
+	top : 40px;
+	left : 200px;
+	width : 270px;
+}
+div#dokudoku-desc p
+{
+	font-size : 12px;
+	text-indent : 1.5em;
+	letter-spacing : 0.3em;
+}
+div#dokudoku-guide
+{
+	position : absolute;
+	top : 130px;
+	left : 260px;
+}
+div#dokudoku-buttons
+{
+	position : absolute;
+	top : 128px;
+	left : 350px;
+}

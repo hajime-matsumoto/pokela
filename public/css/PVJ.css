@@ -1,0 +1,60 @@
+div.guide
+{
+	margin : 0px auto;
+	width : 80px;
+}
+div#pvj
+{
+	position : relative;
+	margin-top : 25px;
+	background : top url('../img/main/block_pvj_top.gif') no-repeat;
+}
+div#pvj-in
+{
+	padding : 47px 0px 8px 0px;
+	background : bottom url('../img/main/block_pvj_bottom.gif') no-repeat;
+}
+div#pvj-contents
+{
+	background : url('../img/main/block_pvj_contents_bg.gif') repeat-y;
+}
+div#pvj-logo
+{
+	width : 160px;
+	margin : 0px auto 5px;
+}
+div#pvj-desc
+{
+	width : 224px;
+	height : 150px;
+	margin : 0px auto;
+	padding-top : 3px;
+	background : url('../img/main/block_pvj_desc_bg.gif') no-repeat;
+}
+div#pvj-desc p
+{
+	margin : 5px;
+	font-size : 11px;
+	letter-spacing : 0.1em;
+	line-height : 1.1em;
+}
+div#pvj-listen,
+div#pvj-listen ul,
+{
+	width : 220px;
+	height : 50px;
+	margin : 0px auto;
+}
+div#pvj-listen li
+{
+	float : left;
+	width : 100px;
+	padding-left : 5px;
+	text-align : center;
+	font-size : 12px;
+}
+div#pvj-comment
+{
+	position : absolute;
+	top : 0px;
+}
