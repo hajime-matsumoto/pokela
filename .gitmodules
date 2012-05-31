@@ -1,0 +1,3 @@
+[submodule "Seaf"]
+	path = Seaf
+	url = git@github.com:hajime-matsumoto/Seaf.git
