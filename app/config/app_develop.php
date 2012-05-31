@@ -4,6 +4,7 @@ $config = include dirname(__FILE__).'/app_production.php';
 
 // For PHP Settings
 $config['php']['ini']['display_errors'] = 1;
+//$config['php']['ini']['date.timezone'] = "Asia/Tokyo";
 
 /*
 $config['db']['name'] = 'visty_develop';

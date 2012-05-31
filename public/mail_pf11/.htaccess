@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([a-zA-Z0-9_]+).html$ index.php [L]
+RewriteRule ^([a-zA-Z0-9_]+)-s.html$ index.php?sos=1 [L]

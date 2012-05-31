@@ -1,0 +1,19 @@
+<Files ~ "^.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+order deny,allow
+
+AddType audio/x-pn-realaudio ram
+AddType audio/x-pn-realaudio ra
+AddType audio/x-pn-realaudio rm
+AddType audio/x-pn-realaudio-plugin ram
+AddType video/x-ms-asf asf
+AddType video/x-ms-asf asx
+AddType audio/x-ms-wma wma
+AddType audio/x-ms-wax wax
+AddType video/x-ms-wmv wmv
+AddType video/x-ms-wm wm
+AddType video/x-ms-wmx wmx
+AddType application/x-ms-wmz wmz
+AddType application/x-ms-wmd wmd
