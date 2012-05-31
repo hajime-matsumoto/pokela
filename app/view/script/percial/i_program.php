@@ -6,7 +6,7 @@ sscanf($file = $e->getField03(), '%[^_]_%[^_]_%[^_]', $key, $date, $count);
 $date =date("Ymd",$time = strtotime('20'.$date));
 $next_date = date("Y/m/d", strtotime("+2 month", $time) );
 ?>
-<OBJECT declare id="fomacm.declaration.11.<?php echo $date.'.'.$idx;?>" data="./files/<?php echo $file;?>.3gp" type="video/3gpp">
+<OBJECT declare id="fomacm.declaration.11.<?php echo $date.'.'.$idx;?>" data="./files/3gp/<?php echo $file;?>.3gp" type="video/3gpp">
 <PARAM name="period" value="<?php echo $next_date;?>/14/59" valuetype="data">
 </OBJECT>
 ┗
@@ -22,7 +22,7 @@ endforeach;
 if( $head == "pf21" ):
 $up = $blog->name('更新案内')->category('オオサキ')->lastn(1); 
 ?>
-<OBJECT declare id="fomacm.declaration.51" data="./files/<?php echo $up[0]->getField03();?>.3gp" type="video/3gpp">
+<OBJECT declare id="fomacm.declaration.51" data="./files/3gp/<?php echo $up[0]->getField03();?>.3gp" type="video/3gpp">
 <PARAM name="period" value="<?php echo $next_date;?>/14/59" valuetype="data">
 </OBJECT>
 ┗

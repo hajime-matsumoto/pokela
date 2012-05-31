@@ -128,7 +128,8 @@
 
 <?php
 foreach(explode("\n",`ls img/pf21/0504/od/ | sort -n`) as $file){
-$disp = mb_convert_encoding( $file, 'cp932','utf8');
+//$disp = mb_convert_encoding( $file, 'cp932','utf8');
+$disp = $file;
 if(trim($disp)){
 printf('<a href="img/pf21/0504/od/%s">画像</a>%s<br>', $disp, str_replace('.jpg','',$disp));
 }

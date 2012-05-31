@@ -250,7 +250,8 @@ D： ミルク
 <br />
 <?php
 foreach(explode("\n",`ls img/pf21/0504/od/ | sort -n`) as $file){
-$disp = mb_convert_encoding( $file, 'cp932','utf8');
+    //$disp = mb_convert_encoding( $file, 'cp932','utf8');
+    $disp = $file;
 if(trim($disp)){
 printf('<img src="img/pf21/0504/od/%s" width="320" border="1" /><br>%s<br><br>', $disp, str_replace('.jpg','',$disp));
 }

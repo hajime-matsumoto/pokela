@@ -14,10 +14,12 @@
 <a href="mailto:support@pokela.jp?subject=%82%db%82%af%82%e7">お問い合わせ・ご意見ご感想</a>
 <br>
 </font></div>
-<hr size="1">
 
+<!--
+<hr size="1">
 <a href="i2.html">試聴トラブルのお知らせ</a><br>
 【docomo以外の方は<a href="index.php">こちら</a>】 
+//-->
 
 <!-- 最新順 日付ごとにグループ化 //-->
 <?php foreach($list as $date => $value):?>
