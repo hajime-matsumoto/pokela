@@ -1,18 +1,49 @@
 <?php
 class Pokela_Controller_Home extends Seaf_Controller
 {
+    public function mobileAction( )
+    {
+        // モバイル用にエンコードをかける
+        $this->getFront()->getResponse()->setOutputEncode('cp932');
+
+        $this->blog = new Pokela_Model_Blog( );
+
+        $res = Seaf_DB::getDefaultAdapter()->select( )
+            ->from('pokela_blog_entry_view_last', '*')
+            ->where('blog_id = ?', 2)
+            ->sort( "id DESC" )
+            ->execute();
+        $list = array();
+        foreach($res as $row )
+        {
+            //$date = date('n/d',strtotime($row->getTs()));
+            $date = $row->getField02();
+            $list[$date][$row->getCatId()] = $row->getFullName();
+        }
+        $this->list = $list;
+    }
+
+    public function auAction( )
+    {
+        $this->mobileAction( );
+    }
+
     public function indexAction( )
     {
-        $this->blog = new Pokela_Model_Blog( );
-        /*
-        $this->blog->select('番組案内')->category('やりすぎソーサラー')->last(1);
-        foreach( $this->blog->select('更新案内')->category('やりすぎソーサラー')->last(2) as $entry )
+        if( !$this->getRequest( )->isMobile() )
         {
-            echo '<li>$entry->date</li>';
-
+            if( !$this->getRequest()->isAu() )
+            {
+                $this->getFront()->forward('au');
+            }
+            else
+            {
+                $this->getFront()->forward('mobile');
+            }
         }
-        */
+        
 
+        $this->blog = new Pokela_Model_Blog( );
     }
 
 }
