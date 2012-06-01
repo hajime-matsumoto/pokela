@@ -1,4 +1,7 @@
 <?php
+//----------------------------------------------------------------------------------
+// 共通処理
+//-----------------------------------------------------------------------------------
 require_once dirname(__FILE__).'/../Seaf/seaf.php';
 
 // Seaf Setup
@@ -24,6 +27,7 @@ $app->bootstrap()->bootstrap('db');
 //-----------------------------------------------------------------------------------
 $blog = new Pokela_Model_Blog();
 $blog_id = $blog->getIdByName('更新案内');
+
 $id = $blog->replace( 
     array('field03 = ?', 'FT_120601_33')
     ,array(
@@ -36,7 +40,6 @@ $id = $blog->replace(
 );
 $blog->addCategory($id,$blog_id,'やりすぎソーサラー');
 
-$blog_id = $blog->getIdByName('更新案内');
 $id = $blog->replace( 
     array('field03 = ?', 'seiyuu_120601_39')
     ,array(
@@ -53,9 +56,7 @@ $id = $blog->replace(
 );
 $blog->addCategory($id,$blog_id,'トリラジ');
 
-
 // オゥサキの更新も通知する
-$blog_id = $blog->getIdByName('更新案内');
 $id = $blog->replace( 
     array('field03 = ?', 'od20')
     ,array(
