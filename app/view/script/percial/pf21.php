@@ -58,16 +58,14 @@
               <br>
               <img src="img/pf21/rajio1.jpg" width="255" border="1"><br>
               <br>
-              <img src="img/pf21/0518/seiyuu_38.jpg" width="500"  border="1"> <br>
-第３８回放送！！　<br />
-声優戦士の卵ちゃんは「中川貴浩（ナカガワタカヒロ）」さん。<br />
-<br />
-              <img src="img/pf21/0504/seiyuu_37.jpg" width="500"  border="1"> <br>
-第３７回放送！！<br />　
-本日のゲストは「北山恭祐」くんが登場。<br />
-北山くんが出演するアニメ情報はエンディングで！！<br />
-今日の収録は、事務所からお届け♪<br />
-              <br>
+<?php 
+foreach( $up as $e ){
+    $date = vsprintf("%02d%02d", explode('/',$e->getField02()));
+    echo "<img src='img/pf21/{$date}/seiyuu_{$e->getField01()}.jpg' width='500'  border='1'> <br>";
+    echo nl2br($e->getField04());
+    echo "<br />";
+}
+?>
 <!-- 
               <img src="img/pf21/0420/seiyuu_36.jpg" width="500"  border="1"> <br>
 							第３６回放送！！　<br>
@@ -232,28 +230,25 @@
 
 //-->
 
-<font size="3">第３８回の番組内容は！！</font><br />
+
+            <font size="3">第<?php echo $up[0]->getField01();?>回の番組内容は！！</font><br />
 ◆解析！真相心理<br />
 　次回の解析深層心理は・・・ <br />
-Ｑ：目の前にいる 恋人が「のどがかわいた」と飲み物を求めています。<br />
-　　あなたが差し出したのは何のドリンク？<br />
-<br />
-A： アルコール
-<br />
-B： ウーロン茶
-<br />
-C： コーラ
-<br />
-D： ミルク
-<br />
+<?php
+echo $up[0]->getField05(); 
+?>
+            <br>
+            　さぁ、これであなたの何が分かるのかっ！！<br>
+            　次回を待て！！</p>
 <br />
 <br />
 <?php
-foreach(explode("\n",`ls img/pf21/0504/od/ | sort -n`) as $file){
+$date = vsprintf("%02d%02d", explode('/',$up[0]->getField02()));
+foreach(explode("\n",`ls img/pf21/$date/od/ | sort -n`) as $file){
     //$disp = mb_convert_encoding( $file, 'cp932','utf8');
     $disp = $file;
 if(trim($disp)){
-printf('<img src="img/pf21/0504/od/%s" width="320" border="1" /><br>%s<br><br>', $disp, str_replace('.jpg','',$disp));
+printf('<img src="img/pf21/'.$date.'/od/%s" width="320" border="1" /><br>%s<br><br>', $disp, str_replace('.jpg','',$disp));
 }
 }
 ?>

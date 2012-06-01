@@ -28,17 +28,14 @@
   <br>
   <img src="img/pf21/rajio1.jpg" width="240"><br>
 	<br>
-              <img src="img/pf21/0504/seiyuu_37.jpg" width="240"  border="1"> <br>
-第３７回放送！！<br />　
-本日のゲストは「北山恭祐」くんが登場。<br />
-北山くんが出演するアニメ情報はエンディングで！！<br />
-今日の収録は、事務所からお届け♪<br />
-<br />
-
-	<img src="img/pf21/0420/seiyuu_36.jpg" width="240"> <br>
-	第３６回放送！！　<br>
-	声優戦士の卵ちゃんは「久山彩（くやまあや）」さん。<br>
-	<br>
+<?php 
+foreach( $up as $e ){
+    $date = vsprintf("%02d%02d", explode('/',$e->getField02()));
+    echo "<img src='img/pf21/{$date}/seiyuu_{$e->getField01()}.jpg' width='240'  border='1'> <br>";
+    echo nl2br($e->getField04());
+    echo "<br />";
+}
+?>
   <br>
 
   <b>レンジャーポイントの説明</b><br>
@@ -110,15 +107,12 @@
   調理過程を見て青くなるごっとんも番組ページに随時アップしていきます。<br>
   <br>
 
-            <font size="3">第３７回の番組内容は！！</font><br>
+            <font size="3">第<?php echo $up[0]->getField01();?>回の番組内容は！！</font><br />
 ◆解析！真相心理<br/>
 　次回の解析深層心理は・・・<br />
-Ｑ： あなたは宇宙旅行を続けています。地球を遠く離れてから<br />
-何年かが過ぎ、ある惑星が見えてきました。その惑星はどんな星？<br />
-<br />
-Ａ：樹木が豊かに茂る惑星。<br />
-Ｂ：海の多い惑星<br />
-Ｃ：都市らしきものが見える惑星<br />
+<?php
+echo $up[0]->getField05(); 
+?>
             <br>
             　さぁ、これであなたの何が分かるのかっ！！<br>
             　次回を待て！！</p>
@@ -127,11 +121,12 @@
             ◆レッドのオゥサキ・ドゥ・マドゥーイ<br><br>
 
 <?php
-foreach(explode("\n",`ls img/pf21/0504/od/ | sort -n`) as $file){
-//$disp = mb_convert_encoding( $file, 'cp932','utf8');
-$disp = $file;
+$date = vsprintf("%02d%02d", explode('/',$up[0]->getField02()));
+foreach(explode("\n",`ls img/pf21/$date/od/ | sort -n`) as $file){
+    //$disp = mb_convert_encoding( $file, 'cp932','utf8');
+    $disp = $file;
 if(trim($disp)){
-printf('<a href="img/pf21/0504/od/%s">画像</a>%s<br>', $disp, str_replace('.jpg','',$disp));
+printf('<a href="img/pf21/'.$date.'/od/%s">画像</a>%s<br>', $disp, str_replace('.jpg','',$disp));
 }
 }
 ?>

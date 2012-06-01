@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS pokela_blog_entry (
 CREATE TABLE IF NOT EXISTS pokela_blog_category (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	type varchar(128),
-	entry_id varchar(128),
+	entry_id INT,
 	name varchar(128),
 	blog_id varchar(128),
 	ts TIMESTAMP
@@ -132,7 +132,7 @@ INSERT INTO `pokela`.`pokela_blog_entry` (`id`, `blog_id`,`content`, `field01`, 
 	'第３８回更新！！
 「教えて！桜咲先生のコーナー」も大好評♪
 桜咲先生の懺悔がある！？ '
-	, '38', '5/18', 'seiyuu_120518_38', NULL, NULL, NULL, NULL, NULL, NULL, NULL, CURRENT_TIMESTAMP);
+	, '38', '5/18', 'seiyuu_120518_38', "第３８回放送！！\n声優戦士の卵ちゃんは「中川貴浩（ナカガワタカヒロ）」さん。", NULL, NULL, NULL, NULL, NULL, NULL, CURRENT_TIMESTAMP);
 INSERT INTO `pokela`.`pokela_blog_category` (`id`, `type`, `entry_id`, `name`, `blog_id`, `ts`) VALUES (NULL, 'entry', '10', 'トリラジ', '1', CURRENT_TIMESTAMP);
 INSERT INTO `pokela`.`pokela_blog_category` (`id`, `type`, `entry_id`, `name`, `blog_id`, `ts`) VALUES (NULL, 'entry', '11', 'トリラジ', '2', CURRENT_TIMESTAMP);
 INSERT INTO `pokela`.`pokela_blog_category` (`id`, `type`, `entry_id`, `name`, `blog_id`, `ts`) VALUES (NULL, 'entry', '12', 'トリラジ', '2', CURRENT_TIMESTAMP);
@@ -182,6 +182,7 @@ INSERT INTO pokela_blog_category_master ( name, full_name, cat_id ) VALUES
 ('イソフラボンバー','長谷優里奈のイソフラボン☆バ↑','pf11'),
 ('パワーボイスジャム', 'しろがねしょぉむと廣田詩夢のPower Voice Jam!','pf05'),
 ('トリラジ', 'とりラジ 「けーすけ・ちよの声優で地球は救われる！」','pf_seiyuu'),
+('トリラジ', 'とりラジ 「けーすけ・ちよの声優で地球は救われる！」','pf21'),
 ('ドクドク', 'めいち＆なっちの　もうDokuDoku','pf26'),
 ('レインボウ', 'ぱわじゃむRainbowのMini Jam Show!!', 'mjs'),
 ('オオサキ', 'オゥサキ・ドゥ・マドゥーイ', 'pf_seiyuu');

@@ -51,6 +51,19 @@ class Pokela_Controller_Program extends Seaf_Controller
     {
         $req = $this->getRequest( );
         $this->id = $req->id;
+
+        $res = Seaf_DB::getDefaultAdapter()->select( )
+            ->from('pokela_blog_category_master', '*')
+            ->where('cat_id = ?', $this->id)
+            ->execute();
+        if(!$res){
+            die('不正なカテゴリ');
+        }
+        $row = $res->firstRow();
+        $name = $row->getName();
+
+        $blog = new Pokela_Model_Blog();
+        $this->up = $blog->name('更新案内')->category($name)->lastn(2);
     }
 
     public function mobileAction( )
