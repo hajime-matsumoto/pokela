@@ -7,8 +7,11 @@ $date =date("Ymd",$time = strtotime('20'.$date));
 $next_date = date("Y/m/d", strtotime("+2 month", $time) );
 
 $dir = '/home/pokelajp/public_html/files/au';
+
+$file = preg_replace('/_net$/','',$file);
 // 前半後半対応
 $files = array_reverse(glob($dir.'/'.$file."*"));
+
 
 foreach(  $files as $file ):
 $size = filesize($file);

@@ -65,7 +65,8 @@ LEFT JOIN
 pokela_blog_category_master AS m
 ON m.name = c.name
 WHERE 
-c.type = 'entry' AND
+c.type = 'entry' 
+AND
 e.id in (SELECT max(entry_id) FROM `pokela_blog_category` GROUP BY name);
 
 

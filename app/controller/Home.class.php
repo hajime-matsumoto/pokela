@@ -10,7 +10,7 @@ class Pokela_Controller_Home extends Seaf_Controller
 
         $res = Seaf_DB::getDefaultAdapter()->select( )
             ->from('pokela_blog_entry_view_last', '*')
-            ->where('blog_id = ?', 2)
+            ->where('blog_id = ? && cat_id != "pf21"', 2)
             ->sort( "id DESC" )
             ->execute();
         $list = array();
