@@ -3,8 +3,11 @@
 <head>
 <?php echo $this->title( ); ?>
 <?php echo $this->headMeta( ); ?>
-<?php echo $this->base(); ?>
+<?php echo $this->facebook( )->meta(); ?>
+
 <?php echo $this->headForIE( ); ?>
+
+<?php echo $this->base(); ?>
 <?php echo $this->headLink( ); ?>
 <?php echo $this->headStyle( )->addFile('/css/import.css'); ?>
 <?php echo $this->headJs( ); ?>

@@ -13,6 +13,7 @@ class Pokela_Bootstrap extends Seaf_App_Bootstrap
         $view->headMeta()->addKeyword("ぽけら","しろがねしょうむ");
         $view->headMeta()->description("インターネットラジオ　ぽけら");
         $view->headMeta()->charset("utf8");
+        $view->headMeta()->useMobile();
         return $view;
     }
 
