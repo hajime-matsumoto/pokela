@@ -61,12 +61,14 @@
 ４人なかなかそろわないけど、頑張るぞ！！<br />
 <br />
 //-->
-				<img src="./img/mjs/MJS_11.jpg" width="400" alt="第11回" border="1" /><br>
-今回はお便りを下に、番組内で撮影が開始！！<Br />
-みんなの写真はブログでチェック！！<br />
-<br />
-				<img src="./img/mjs/MJS_12.jpg" width="400" alt="第12回" border="1" /><br>
-今回はいつもと違うスタジオからお届け！！<br />
+<?php 
+foreach( $up as $e ){
+    $date = vsprintf("%02d%02d", explode('/',$e->getField02()));
+    echo "<img src='img/mjs/MJS_{$e->getField01()}.jpg' width='400'  border='1'> <br>";
+    echo nl2br($e->getField04());
+    echo "<br />";
+}
+?>
 <br />
 ぱわじゃむRainbowのブログ<br />
 <a href="http://ameblo.jp/power-jam/">http://ameblo.jp/power-jam/</a><br />

@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>とりラジ</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="keywords" content="たけやんの「不可能なんてありえましぇ～ん」啓介・千依の声優で地球は救われる！">
     <meta name="description" content="たけやんの「不可能なんてありえましぇ～ん」啓介・千依の声優で地球は救われる！">
 <?php echo $this->base(); ?>

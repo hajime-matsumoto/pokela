@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>めいち＆なっちの　もうDokuDoku</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="keywords" content="めいち＆なっちの　もうDokuDoku">
 <meta name="description" content="「サブカルが日本を元気にする！」サブカルチャー応援情報番組。">
 <?php echo $this->base(); ?>

@@ -52,12 +52,15 @@
 ただいま選考中♪<br />
 <br>
 //-->
-                <a href="img/pf05/PVJ_138.jpg">写真</a> <br>
+<?php 
+foreach( $up as $e ){
+    $date = vsprintf("%02d%02d", explode('/',$e->getField02()));
+    echo "<a href src='img/pf05/PVJ_{$e->getField01()}.jpg'>写真</a> <br />";
+    echo nl2br($e->getField04());
+    echo "<br />";
+}
+?>
 今回はもゲストが登場！！<br />
-遊びに来てくれた、声優の「あきやまかおる」さん登場！！<br />
-<br />
-                <a href="img/pf05/PVJ_137.jpg">写真</a> <br>
-今回はなんとゲストが登場！！<br />
 遊びに来てくれた、声優の「あきやまかおる」さん登場！！<br />
 <br />
 

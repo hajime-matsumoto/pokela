@@ -42,11 +42,14 @@
 大柴英亜瑠の舞台情報のお知らせ！！ <br />
 詳細は番組情報をチェックしてね。<br />
 //--->
-				 <a href="./img/mjs/MJS_11.jpg">画像</a><br>
-今回はお便りを下に、番組内で撮影が開始！！<Br />
-みんなの写真はブログでチェック！！<br />
-<br />
-				 <a href="./img/mjs/MJS_12.jpg">画像</a><br>
+<?php 
+foreach( $up as $e ){
+    $date = vsprintf("%02d%02d", explode('/',$e->getField02()));
+    echo "<a href src='img/mjs/MJS_{$e->getField01()}.jpg'>画像</a> <br />";
+    echo nl2br($e->getField04());
+    echo "<br />";
+}
+?>
 今回はいつもと違うスタジオからお届け！！<br />
 </br />
 ぱわじゃむRainbowのブログ<br />

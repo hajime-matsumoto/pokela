@@ -2,3 +2,5 @@ AddType application/x-httpd-php .htm .html
 
 RewriteEngine on
 RewriteRule !\.(js|ico|gif|jpg|png|css|html|mp3|3gp|3g2|php)$ index.php
+
+ErrorDocument 404 /index.php
