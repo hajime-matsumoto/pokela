@@ -12,8 +12,8 @@ Seaf_Registry::set('LogTimeFormat', 'Y-m-d G:i:s');
 Seaf_Registry::set('TimeZone', 'Asia/Tokyo');
 
 defined('APP_PATH') || define('APP_PATH', realpath(dirname(__FILE__) . '/../app'));
-defined('APP_ENV') || define('APP_ENV', (getenv('APP_ENV') ? getenv('APP_ENV') : 'develop'));
-//defined('APP_ENV') || define('APP_ENV', (getenv('APP_ENV') ? getenv('APP_ENV') : 'production'));
+//defined('APP_ENV') || define('APP_ENV', (getenv('APP_ENV') ? getenv('APP_ENV') : 'develop'));
+defined('APP_ENV') || define('APP_ENV', (getenv('APP_ENV') ? getenv('APP_ENV') : 'production'));
 
 // Create application, bootstrap, and run
 $app = new Seaf_App( APP_ENV, realpath(APP_PATH . '/config'));
