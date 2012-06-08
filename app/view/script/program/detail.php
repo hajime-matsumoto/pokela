@@ -1,3 +1,3 @@
 <?php
-$this->percial( $id . ".php", array('up'=>$up) );
+$this->percial( $id . ".php", array('up'=>$up, 'id'=>$id, 'prog'=>$prog) );
 ?>

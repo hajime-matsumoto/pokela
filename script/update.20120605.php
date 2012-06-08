@@ -28,45 +28,23 @@ $app->bootstrap()->bootstrap('db');
 $blog = new Pokela_Model_Blog();
 $blog_id = $blog->getIdByName('更新案内');
 
-$file = 'iso_120605_113';
+$file = 'majyoradio_120608_1';
+$date = '6/8';
 $id = $blog->replace( 
     array('field03 = ?', $file)
     ,array(
         'blog_id' => $blog_id, // Blog IDを指定
-        'content' => "第１１３回更新！！\n皆さんからのお便り、待ってます♪",
-        'field01' => 113, // 回数
-        'field02' => '6/5', // 日付
+        'content' => "第１回更新！！\n新番組開始！！オリジナルラジオドラマあり！\nトークあり！の３０分♪\n聴いてくれないと・・・処刑！しちゃうからね☆" ,
+        'field01' => 1, // 回数
+        'field02' => $date, // 日付
         'field03' => $file, // ファイル名
+        'field04' => 
+        "新番組開始！！<br />
+        オリジナルラジオドラマあり！トークありの３０分！！<br />
+        オープニングとエンディングもラジオオリジナルです♪<br />
+        愚民共っ！感想メールを待ってるよ！！<br />"
     )
 );
-$blog->addCategory($id,$blog_id,'イソフラボンバー');
+$blog->addCategory($id,$blog_id,'魔界政府広報部');
 
-$file = 'PVJ_120605_139_net';
-$id = $blog->replace( 
-    array('field03 = ?', $file)
-    ,array(
-        'blog_id' => $blog_id, // Blog IDを指定
-        'content' => "第１３９回更新！！\nメンバーの卒業まで残りあとわずか・・・\n頑張る勇姿を見逃すなっ！！",
-        'field01' => 139, // 回数
-        'field02' => '6/5', // 日付
-        'field03' => $file, // ファイル名
-        'field04' => "メンバーの卒業まで残りあとわずか・・・\n彼女たちへの応援メッセージをお願いします。"
-    )
-);
-$blog->addCategory($id,$blog_id,'パワーボイスジャム');
-
-
-$file = 'MJS_120605_13';
-$id = $blog->replace( 
-    array('field03 = ?', $file)
-    ,array(
-        'blog_id' => $blog_id, // Blog IDを指定
-        'content' => "第１３回放送！！\nツイッターではやりの診断メーカーに挑戦！！",
-        'field01' => 13, // 回数
-        'field02' => '6/5', // 日付
-        'field03' => $file, // ファイル名
-        'field04' => "今回はツイッターなどでもはやりの\n診断メーカーに挑戦！！\nさて、どんな言葉が飛び出すか！？"
-    )
-);
-$blog->addCategory($id,$blog_id,'レインボウ');
 ?>

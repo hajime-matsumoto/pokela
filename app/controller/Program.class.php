@@ -64,6 +64,8 @@ class Pokela_Controller_Program extends Seaf_Controller
 
         $blog = new Pokela_Model_Blog();
         $this->up = $blog->name('更新案内')->category($name)->lastn(2);
+        $prog = $blog->name('番組案内')->category($name)->lastn(1);
+        $this->prog = $prog[0];
     }
 
     public function mobileAction( )
