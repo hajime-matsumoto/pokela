@@ -23,6 +23,5 @@ class Pokela_Controller_Img extends Seaf_Controller
         header('Content-Type: Image/Jpeg');
         $headLine->gen();
     }
-
 }
 ?>

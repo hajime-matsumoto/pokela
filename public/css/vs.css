@@ -1,0 +1,110 @@
+/*
+div#vs
+{
+	background : top url('../img/main/block_no_top.gif') no-repeat;
+}
+div#vs-in
+{
+	padding : 47px 0px 13px 0px;
+	background : bottom url('../img/main/block_no_bottom.gif') no-repeat;
+}
+div#vs-contents
+{
+	height : 440px;
+	background : url('../img/main/block_no_contents_bg.gif') repeat-y;
+}
+div#vs-contents-in
+{
+	width : 210px;
+}
+div#vs-contents p
+{
+	position : relative;
+	margin-left : 20px;
+	margin-right : 20px;
+	font-size : 
+}
+div#vs-logo
+{
+	width : 168px;
+	position : absolute;
+	top : 60px;
+	left : 35px;
+}
+*/
+
+div#vs
+{
+	position : relative;
+	background : top url('../img/main/block_vs_top.gif') no-repeat;
+}
+div#vs-in
+{
+	padding : 47px 0px 13px 0px;
+	background : bottom url('../img/main/block_no_bottom.gif') no-repeat;
+}
+div#vs-contents
+{
+	height : 440px;
+	background : url('../img/main/block_no_contents_bg.gif') repeat-y;
+}
+div#vs-contents-in
+{
+	width : 210px;
+}
+div#vs-desc
+{
+	width : 200px;
+	position : absolute;
+	top : 150px;
+	left : 20px;
+}
+div#vs-contents p
+{
+	font-size : 1.1em;
+	letter-spacing : 0.2em;
+	line-height : 1.1em;
+}
+div#vs-comment
+{
+	position : absolute;
+	top : 340px;
+	left : 15px;
+}
+div#vs-buttons
+{
+	position : absolute;
+	top : 410px;
+	left : 15px;
+}
+div#vs-listen,
+div#vs-listen ul,
+{
+	width : 220px;
+	height : 50px;
+	margin : 0px auto;
+}
+div#vs-listen li
+{
+	float : left;
+	width : 100px;
+	padding-left : 5px;
+	text-align : center;
+	font-size : 1em;
+	position : absolute;
+	top : 30px;
+}
+div#vs-guide
+{
+	margin : 0px auto;
+	width : 80px;
+	position : absolute;
+	left : 60px;
+}
+div#vs-logo
+{
+	width : 265px;
+	position : absolute;
+	top : 20px;
+	left : -10px;
+}

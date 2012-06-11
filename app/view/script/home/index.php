@@ -11,6 +11,11 @@
 <?php echo $this->headLink( ); ?>
 <?php echo $this->headStyle( )->addFile('/css/import.css'); ?>
 <?php echo $this->headJs( ); ?>
+<style>
+div#programs {
+height :2000px;
+}
+</style>
 </head>
   <body>
     <div id="header">
@@ -40,6 +45,7 @@
 
             <div id="programs-left">
 <?php $this->percial('program.php', array('head'=>'ft', 'name'=>'やりすぎソーサラー', 'key'=>'pf24', 'blog'=>$blog )); ?>
+<?php $this->percial('program.php', array('head'=>'vs', 'name'=>'バーサスWAVE', 'key'=>'vs', 'blog'=>$blog )); ?>
 <?php $this->percial('program.php', array('head'=>'pvj', 'name'=>'パワーボイスジャム', 'key'=>'pf05', 'blog'=>$blog )); ?>
 
               <div id="naruuza">
@@ -57,15 +63,7 @@
 
               <div id="programs-right-2column">
                 <div id="programs-right-right">
-                  <div id="no">
-                    <div id="no-in">
-                      <div id="no-contents">
-                        <div id="no-logo"><img src="img/main/comming_soon.gif" alt="Comming Soon!!" /></div>
-                        <p>『井上和彦のＲＡＤＩＯ Ｂ』<br />の放送は終了致しました。</p>
-                        <p>新番組をお楽しみに！</p>
-                      </div><!-- end contents //-->
-                    </div><!-- end block-in //-->
-                  </div><!-- end block //-->
+<?php $this->percial('program.php', array('head'=>'makai', 'name'=>'魔界政府広報部', 'key'=>'makai', 'blog'=>$blog )); ?>
                 </div>
                 <div id="programs-right-left">
 <?php $this->percial('program.php', array('head'=>'iso', 'name'=>'イソフラボンバー','key'=>'pf11', 'blog'=>$blog )); ?>
