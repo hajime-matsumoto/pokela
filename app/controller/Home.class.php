@@ -13,6 +13,7 @@ class Pokela_Controller_Home extends Seaf_Controller
             ->where('blog_id = ? && cat_id != "pf21"', 2)
             ->sort( "id DESC" )
             ->execute();
+
         $list = array();
         foreach($res as $row )
         {
@@ -20,6 +21,7 @@ class Pokela_Controller_Home extends Seaf_Controller
             $date = $row->getField02();
             $list[$date][$row->getCatId()] = $row->getFullName();
         }
+
         $this->list = $list;
     }
 
@@ -46,5 +48,13 @@ class Pokela_Controller_Home extends Seaf_Controller
         $this->blog = new Pokela_Model_Blog( );
     }
 
+    public function index2Action()
+    {
+    }
+
+    public function index3Action()
+    {
+        $this->indexAction();
+    }
 }
 ?>

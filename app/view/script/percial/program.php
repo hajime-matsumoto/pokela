@@ -2,7 +2,8 @@
 $es = $blog->name('番組案内')->category($name)->lastn(1); 
 $info = $es[0]; 
 $up = $blog->name('更新案内')->category($name)->lastn(2); 
-$comment = urlencode($up[0]->getContent());
+
+$comment = $up == false ? "NEW" : urlencode($up[0]->getContent());
 
 $use_contents_in = $head != "tori" && $head !="pvj" && $head != 'mjs' ? true: false;
 
@@ -61,6 +62,8 @@ HTML;
 switch( $head)
 {
 case 'ft':
+case 'makai':
+case 'vs':
     echo $logo;
     echo $content;
     echo $headline;
