@@ -64,7 +64,11 @@
 <?php 
 foreach( $up as $e ){
     $date = vsprintf("%02d%02d", explode('/',$e->getField02()));
-    echo "<img src='img/mjs/MJS_{$e->getField01()}.jpg' width='400'  border='1'> <br>";
+    $file = "img/mjs/MJS_{$e->getField01()}.jpg";
+    if( file_exists('/home/kurari/pokela/public/' .$file) )
+    {
+        echo "<img src='img/mjs/MJS_{$e->getField01()}.jpg' width='400'  border='1'> <br>";
+    }
     echo nl2br($e->getField04());
     echo "<br />";
 }

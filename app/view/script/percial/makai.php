@@ -43,9 +43,12 @@ $this->headMeta( )->setDescription("番組タイトル：廣田詩夢とあき�
 <?php 
 foreach( $up as $e ){
     $date = vsprintf("%02d%02d", explode('/',$e->getField02()));
+    $img = "/home/kurari/pokela/public/img/makai/majyoradio_{$e->getField01()}.jpg";
+    if(file_exists($img)){
     echo "<img src='img/makai/majyoradio_{$e->getField01()}.jpg' width='400'  border='1'> <br>";
     echo nl2br($e->getField04());
     echo "<br />";
+    }
 }
 ?>
  </td>

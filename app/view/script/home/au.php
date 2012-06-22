@@ -68,6 +68,15 @@
 <img src="img/mjs/top.jpg" width="150"><br>
 <?php $this->percial('au_program.php', array('name'=>"レインボウ", 'head'=>'mjs','blog'=>$blog, 'cnt'=>1) ); ?>
 
+<hr size="1">
+<a name="makai"></a> <font color="#FF9900"></font>『廣田詩夢とあきやまかおるのまじょおーさまばくたん！魔界政府広報部』<br>
+<img src="img/makai/main/top_banner.jpg" width="150"><br>
+<?php $this->percial('au_program.php', array('name'=>"魔界政府広報部", 'head'=>'makai','blog'=>$blog, 'cnt'=>1) ); ?>
+
+<hr size="1">
+<a name="vs"></a> <font color="#FF9900"></font>『V.S UNION WAVE』<br>
+<img src="img/vs/main/top_banner.png" width="150"><br>
+<?php $this->percial('au_program.php', array('name'=>"バーサスWAVE", 'head'=>'vs','blog'=>$blog, 'cnt'=>1) ); ?>
 
 <hr size="1">
 
