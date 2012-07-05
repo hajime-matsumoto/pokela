@@ -23,7 +23,16 @@ div#iso-contents p
 }
 div#iso-comment
 {
-	margin : 10px 0px;
+	position : absolute;
+	left : 10px;
+	top :	140px;
+}
+div#iso-desc
+{
+	position : absolute;
+	top :	200px;
+	left : 0px;
+	padding : 0px 12px;
 }
 div#iso-buttons
 {
