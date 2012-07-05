@@ -1,0 +1,81 @@
+/*
+ * ぱわじゃむRainbowのMini Jam Show！
+ */
+div#yaroo
+{
+	position : relative;
+	top : 10px;
+	width : 490px;
+	background : top url('../img/main/block_mjs_top.gif') no-repeat;
+}
+div#yaroo-in
+{
+	padding : 54px 0px 13px 0px;
+	background : bottom url('../img/main/block_mjs_bottom.gif') no-repeat;
+}
+div#yaroo-contents
+{
+	position : relative;
+	height : 215px;
+	background : url('../img/main/block_mjs_contents_bg.gif') repeat-y;
+}
+div#yaroo-title
+{
+	position : absolute;
+	top : 5px;
+	left : 85px;
+}
+div#yaroo-desc
+{
+	position : absolute;
+	top : 40px;
+	left : 180px;
+}
+div#yaroo-desc p
+{
+	width : 280px;
+	margin : 0px 15px;
+	font-size : 13px;
+	letter-spacing : 0.1em;
+}
+div#yaroo-comment
+{
+	position : absolute;
+	top : 10px;
+	left : 20px;
+}
+div#yaroo-guide
+{
+	width : 80px;
+	position : absolute;
+	top : 160px;
+	left : 280px;
+}
+div#yaroo-logo img
+{
+	width : 140px;
+}
+div#yaroo-logo
+{
+	position : absolute;
+	top : 40px;
+	left : 20px;
+}
+div#yaroo-logo img
+{
+	border : 1px solid #DC6900;
+}
+div#yaroo-buttons
+{
+	position : absolute;
+	top : 160px;
+	left : 360px;
+}
+div#yaroo-listen ul li
+{
+	float : left;
+	width : 90px;
+	padding-left : 5px;
+	text-align : center;
+	font-size : 1em;
+}

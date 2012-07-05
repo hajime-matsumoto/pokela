@@ -72,6 +72,7 @@ height :2000px;
 
               <div id="programs-right-both">
 <?php $this->percial('program.php', array('head'=>'tori', 'name'=>'トリラジ','key'=>'pf21', 'blog'=>$blog )); ?>
+<?php $this->percial('program.php', array('head'=>'yaroo', 'name'=>'YAROO','key'=>'yaroo', 'blog'=>$blog )); ?>
 <?php $this->percial('program.php', array('head'=>'mjs', 'name'=>'レインボウ','key'=>'mjs', 'blog'=>$blog )); ?>
 <?php $this->percial('program.php', array('head'=>'dokudoku', 'name'=>'ドクドク','key'=>'pf26', 'blog'=>$blog )); ?>
 

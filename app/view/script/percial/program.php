@@ -116,6 +116,13 @@ case 'mjs':
                       </div><!-- end buttons //-->
 HTML;
     break;
+case 'yaroo':
+    echo $logo;
+    echo $headline;
+    echo $content;
+    echo $guide;
+    echo $buttons;
+    break;
 case 'dokudoku':
     echo $logo;
     echo $content;

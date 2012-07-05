@@ -23,6 +23,23 @@ class Pokela_Model_Blog extends Seaf_Blog
         );
         $this->addCategory($id,$blog_id,'イソフラボンバー');
     }
+    public function yarooUpdate( $file, $date, $count, $head, $comment )
+    {
+        $blog_id = $this->getIdByName('更新案内');
+        $id = $this->replace( 
+            array('field03 = ?', $file)
+            ,array(
+                'blog_id' => $blog_id, // Blog IDを指定
+                'content' => $head,
+                'field01' => $count, // 回数
+                'field02' => $date, // 日付
+                'field03' => $file, // ファイル名
+                'field04' => $comment, // コメント
+            )
+        );
+        $this->addCategory($id,$blog_id,'YAROO');
+    }
+
     public function pvjUpdate( $file, $date, $count, $head, $comment )
     {
         $blog_id = $this->getIdByName('更新案内');

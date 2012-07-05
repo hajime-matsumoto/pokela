@@ -59,6 +59,12 @@
 <?php $this->percial('i_program.php', array('name'=>"トリラジ", 'head'=>'pf21','blog'=>$blog, 'cnt'=>2) ); ?>
 
 <hr size="1">
+<a name="pf_seiyuu"></a> <font color="#FF9900"></font>
+<font color="#FF9900"></font>『30 DELUXとロック兄弟のＹＡＲＯＯ！』<br>
+<img src="img/yaroo/main/logo.jpg" width="150"><br>
+<?php $this->percial('i_program.php', array('name'=>"YAROO", 'head'=>'yaroo','blog'=>$blog, 'cnt'=>2) ); ?>
+
+<hr size="1">
 <a name="pf26"></a> <font color="#FF9900"></font>『めいち＆なっちの　もうDokuDoku』<br>
 <img src="img/pf26/i_logo.jpg" width="150"><br>
 <?php $this->percial('i_program.php', array('name'=>"ドクドク", 'head'=>'pf26','blog'=>$blog, 'cnt'=>1) ); ?>
