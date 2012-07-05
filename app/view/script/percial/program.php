@@ -117,7 +117,9 @@ case 'mjs':
 HTML;
     break;
 case 'yaroo':
-    echo $logo;
+echo <<<HTML
+<div id="{$head}-logo"><img width="140" src="img/main/{$info->getField01()}" alt="{$info->getField02()}" title="{$info->getField02()}" /></div>
+HTML;
     echo $headline;
     echo $content;
     echo <<<HTML
