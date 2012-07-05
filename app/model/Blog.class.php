@@ -107,5 +107,21 @@ class Pokela_Model_Blog extends Seaf_Blog
         );
         $this->addCategory($id,$blog_id,'魔界政府広報部');
     }
+
+    public function vsUpdate( $file, $date, $count, $head )
+    {
+        $blog_id = $this->getIdByName('更新案内');
+        $id = $this->replace( 
+            array('field03 = ?', $file)
+            ,array(
+                'blog_id' => $blog_id, // Blog IDを指定
+                'content' => $head,
+                'field01' => $count,
+                'field02' => $date, // 日付
+                'field03' => $file, // ファイル名
+            )
+        );
+        $this->addCategory($id,$blog_id,'バーサスWAVE');
+    }
 }
 ?>
