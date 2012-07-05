@@ -1,0 +1,203 @@
+-- MySQL dump 10.11
+--
+-- Host: localhost    Database: pokela
+-- ------------------------------------------------------
+-- Server version	5.0.95
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `pokela_blog_category`
+--
+
+DROP TABLE IF EXISTS `pokela_blog_category`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `pokela_blog_category` (
+  `id` int(11) NOT NULL auto_increment,
+  `type` varchar(128) default NULL,
+  `entry_id` int(11) default NULL,
+  `name` varchar(128) default NULL,
+  `blog_id` varchar(128) default NULL,
+  `ts` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pokela_blog_category`
+--
+
+LOCK TABLES `pokela_blog_category` WRITE;
+/*!40000 ALTER TABLE `pokela_blog_category` DISABLE KEYS */;
+INSERT INTO `pokela_blog_category` VALUES (1,'entry',1,'やりすぎソーサラー','1','2012-06-01 03:48:28'),(2,'entry',2,'やりすぎソーサラー','2','2012-06-01 03:48:28'),(3,'entry',3,'やりすぎソーサラー','2','2012-06-01 03:48:28'),(4,'entry',4,'イソフラボンバー','1','2012-06-01 03:48:28'),(5,'entry',5,'イソフラボンバー','2','2012-06-01 03:48:28'),(6,'entry',6,'イソフラボンバー','2','2012-06-01 03:48:28'),(7,'entry',7,'パワーボイスジャム','1','2012-06-01 03:48:28'),(8,'entry',8,'パワーボイスジャム','2','2012-06-01 03:48:28'),(9,'entry',9,'パワーボイスジャム','2','2012-06-01 03:48:28'),(10,'entry',10,'トリラジ','1','2012-06-01 03:48:28'),(11,'entry',11,'トリラジ','2','2012-06-01 03:48:28'),(12,'entry',12,'トリラジ','2','2012-06-01 03:48:28'),(13,'entry',13,'レインボウ','1','2012-06-01 03:48:28'),(14,'entry',14,'レインボウ','2','2012-06-01 03:48:28'),(15,'entry',15,'レインボウ','2','2012-06-01 03:48:28'),(16,'entry',16,'ドクドク','1','2012-06-01 03:48:28'),(17,'entry',17,'ドクドク','2','2012-06-01 03:48:28'),(18,'entry',18,'ドクドク','2','2012-06-01 03:48:28'),(19,'entry',19,'オオサキ','2','2012-06-01 03:48:28'),(20,'entry',20,'やりすぎソーサラー','2','2012-06-01 03:48:37'),(21,'entry',21,'トリラジ','2','2012-06-01 03:48:37'),(22,'entry',22,'オオサキ','2','2012-06-01 03:48:37'),(23,'entry',23,'イソフラボンバー','2','2012-06-06 10:52:59'),(24,'entry',24,'パワーボイスジャム','2','2012-06-06 10:52:59'),(25,'entry',25,'レインボウ','2','2012-06-06 10:52:59'),(26,'entry',26,'魔界政府広報部','1','2012-06-06 11:38:19'),(27,'entry',27,'魔界政府広報部','2','2012-06-08 04:13:26'),(28,'entry',28,'バーサスWAVE','1','2012-06-10 18:22:08'),(29,'entry',29,'バーサスWAVE','2','2012-06-11 05:40:59'),(30,'entry',30,'イソフラボンバー','2','2012-06-12 12:23:43'),(31,'entry',31,'パワーボイスジャム','2','2012-06-12 12:30:33'),(32,'entry',32,'レインボウ','2','2012-06-12 12:37:42'),(34,'entry',33,'トリラジ','2','2012-06-15 14:17:17'),(35,'entry',34,'やりすぎソーサラー','2','2012-06-15 14:23:00'),(36,'entry',35,'魔界政府広報部','2','2012-06-15 14:28:10'),(37,'entry',36,'イソフラボンバー','2','2012-06-19 12:11:23'),(38,'entry',37,'パワーボイスジャム','2','2012-06-19 12:11:23'),(39,'entry',38,'レインボウ','2','2012-06-19 12:11:23'),(40,'entry',39,'魔界政府広報部','2','2012-06-22 04:56:05'),(41,'entry',40,'イソフラボンバー','2','2012-06-28 16:04:25'),(42,'entry',41,'レインボウ','2','2012-06-28 16:04:25'),(43,'entry',42,'バーサスWAVE','2','2012-06-28 16:04:25'),(44,'entry',43,'トリラジ','2','2012-06-29 03:31:03'),(45,'entry',44,'やりすぎソーサラー','2','2012-06-29 03:31:03'),(46,'entry',45,'魔界政府広報部','2','2012-06-29 03:31:03'),(47,'entry',46,'イソフラボンバー','2','2012-07-05 06:05:24'),(48,'entry',47,'レインボウ','2','2012-07-05 06:05:24');
+/*!40000 ALTER TABLE `pokela_blog_category` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `pokela_blog_category_master`
+--
+
+DROP TABLE IF EXISTS `pokela_blog_category_master`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `pokela_blog_category_master` (
+  `id` int(11) NOT NULL auto_increment,
+  `full_name` varchar(128) default NULL,
+  `name` varchar(128) default NULL,
+  `cat_id` varchar(128) default NULL,
+  `ts` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pokela_blog_category_master`
+--
+
+LOCK TABLES `pokela_blog_category_master` WRITE;
+/*!40000 ALTER TABLE `pokela_blog_category_master` DISABLE KEYS */;
+INSERT INTO `pokela_blog_category_master` VALUES (1,'FAIRY TAIL Webラジオ『魔導士ギルド放送局 やりすぎソーサラー！』','やりすぎソーサラー','pf24','2012-06-01 03:48:28'),(2,'長谷優里奈のイソフラボン☆バ↑','イソフラボンバー','pf11','2012-06-01 03:48:28'),(3,'しろがねしょぉむと廣田詩夢のPower Voice Jam!','パワーボイスジャム','pf05','2012-06-01 03:48:28'),(4,'とりラジ 「けーすけ・ちよの声優で地球は救われる！」','トリラジ','pf_seiyuu','2012-06-01 03:48:28'),(5,'とりラジ 「けーすけ・ちよの声優で地球は救われる！」','トリラジ','pf21','2012-06-01 03:48:28'),(6,'めいち＆なっちの　もうDokuDoku','ドクドク','pf26','2012-06-01 03:48:28'),(7,'ぱわじゃむRainbowのMini Jam Show!!','レインボウ','mjs','2012-06-01 03:48:28'),(8,'オゥサキ・ドゥ・マドゥーイ','オオサキ','pf_seiyuu','2012-06-01 03:48:28'),(9,'廣田詩夢とあきやまかおるのまじょおーさまばくたん！魔界政府広報部','魔界政府広報部','makai','2012-06-06 11:38:05'),(10,'バーサスWAVE','バーサスWAVE','vs','2012-06-10 18:22:08');
+/*!40000 ALTER TABLE `pokela_blog_category_master` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Temporary table structure for view `pokela_blog_category_view`
+--
+
+DROP TABLE IF EXISTS `pokela_blog_category_view`;
+/*!50001 DROP VIEW IF EXISTS `pokela_blog_category_view`*/;
+/*!50001 CREATE TABLE `pokela_blog_category_view` (
+  `name` varchar(128),
+  `full_name` varchar(128),
+  `ts` timestamp,
+  `blog_id` varchar(128)
+) ENGINE=MyISAM */;
+
+--
+-- Table structure for table `pokela_blog_entry`
+--
+
+DROP TABLE IF EXISTS `pokela_blog_entry`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `pokela_blog_entry` (
+  `id` int(11) NOT NULL auto_increment,
+  `blog_id` int(11) default NULL,
+  `content` text,
+  `field01` text,
+  `field02` text,
+  `field03` text,
+  `field04` text,
+  `field05` text,
+  `field06` text,
+  `field07` text,
+  `field08` text,
+  `field09` text,
+  `field10` text,
+  `ts` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=48 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pokela_blog_entry`
+--
+
+LOCK TABLES `pokela_blog_entry` WRITE;
+/*!40000 ALTER TABLE `pokela_blog_entry` DISABLE KEYS */;
+INSERT INTO `pokela_blog_entry` VALUES (1,1,'<p>テレビ東京系６局ネットにて、毎週土曜日、朝10:30から放送中のTVアニメ『FAIRY TAIL』のラジオがいよいよスタート！</p><p>アニメ『FAIRY TAIL』の情報をお届けする他に、魔導士ギルドとしてリスナーのみんなからの質問や依頼に答えたりしながら、 更にみんなで『FAIRY TAIL』を盛り上げていこうというラジオ番組です。</p>','ft_logo.jpg','FAIRY TAIL Webラジオ『魔導士ギルド放送局 やりすぎソーサラー！』',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(2,2,'更新31回目','31','5/4','FT_120504_31',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(3,2,'第３２回更新！\n今回は公開録音の模様をお届け！！\nスペシャルなゲストも登場♪','32','5/18','FT_120518_32',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(4,1,'\n	<p>長谷優里奈の新ラジオ番組がスタート！！</p>\n	<p>女の子はいつでもどこでもキレイでいなくちゃっ♪</p>\n	<p>美容といったら、女の子にとって良い成分『イソフラボン』！？</p>\n	<p>パーソナリティ一同、自分たちの女度を上げるために</p>\n	<p>様々なことに挑戦していくどたばた成長バラエティ番組↑</p>\n	<p>遂に放送開始！！</p>\n	','iso_logo.jpg','長谷優里奈のイソフラボン☆バ↑',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(5,2,'更新111回目','111','5/22','iso_120522_111',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(6,2,'第１１２回更新！！\n皆さんからのお便り、待ってます♪','112','5/29','iso_120529_112',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(7,1,'<p>声優プロダクション「うぃなぁエンタテイメント」の「しろがねしょぉむ」と、ぷろだくしょんバオバブの声優「廣田詩夢」の凸凹コンビが、 声優になりたい人・声優好きの人に送る応援バラエティー番組！</p>','pvj_logo.jpg','しろがねしょぉむと廣田詩夢のPower Voice Jam!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(8,2,'更新111回目','137','5/22','PVJ_120522_137_net',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(9,2,'第１３８回更新！！\n引き続き、ゲストに「あきやまかおる」さんが登場！！','138','5/29','PVJ_120529_138_net',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(10,1,'<p>声優事務所「トリトリオフィス」のラジオ番組がついに登場！！</p>\n	<p>トリトリオフィスの様々な声優が隔週で、パーソナリティをつとめるラジオ。</p>\n	<p>第２・４週更新が「けーすけ・ちよの声優で地球は救われる！」</p>','seiyuu_logo.jpg','とりラジ 「けーすけ・ちよの声優で地球は救われる！」',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(11,2,'更新111回目','37','5/4','seiyuu_120504_37',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(12,2,'第３８回更新！！\n「教えて！桜咲先生のコーナー」も大好評♪\n桜咲先生の懺悔がある！？ ','38','5/18','seiyuu_120518_38','第３８回放送！！\n声優戦士の卵ちゃんは「中川貴浩（ナカガワタカヒロ）」さん。',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(13,1,'<p>ラジオ大阪で放送中の番組「しろがねしょぉむと廣田詩夢のPower Voice Jam！」\n	から生まれたアシスタントユニット「ぱわじゃむRainbow」</p>\n	<p>新人声優である彼女たちだけの番組が遂に開始！！</p>\n	<p>毎回色んな事にチャレンジしながら、切磋琢磨に成長していく姿を描いていきます！！</p>','mjs_logo.jpg','ぱわじゃむRainbowのMini Jam Show!!',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(14,2,'更新11回目','11','5/4','MJS_120504_11',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(15,2,'第１２回放送！！\n今回は、お台場のスタジオからお届け！！','12','5/29','MJS_120529_12',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(16,1,'<p>カリスマメイドの伊藤芽衣（めいち）と新鋭声優の板垣夏美（なっち）のMC二人が、ナレーターのしろがねしょぉむ（教授）の元で、\n	「サブカルは日本の強み」をテーマに日本文化と創造力の魅力を広く発信していく番組です！！</p>','dokudoku_logo.jpg','めいち＆なっちの　もうDokuDoku',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(17,2,'更新11回目','11','5/4','dokudoku_120504_23',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(18,2,'今週は番組はお休みです。\r\n次回予定は６月２８日を予定しております。\r\nみんな楽しみに待っててね♪','24','5/31','dokudoku_120531_24',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-13 21:46:31'),(19,2,'更新8回目','18','4/6','od18',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:28'),(20,2,'第３３回更新！\n今回も公開録音の模様をお届け！','33','6/1','FT_120601_33',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:37'),(21,2,'第３９回更新！！\nオゥサキ・ドゥ・マドゥーイの写真は\n番組情報をチェックしてね♪','39','6/1','seiyuu_120601_39','第３９回放送！！\n今日の声優戦士は「角掛みなみ（つのかけみなみ）」さん♪\nまた、ごっとんの誕生日記念に「景浦大輔（げっとん）」も登場！！','<p>Ｑ： 昔話の「ももたろう」主人公の次に思い浮かぶ登場人物は？</p><br />１：おじいさん・おばあさん<br />２：犬<br />３：猿<br />４：キジ<br />５：鬼<br />',NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:37'),(22,2,'オゥサキ・ドゥ・マドゥーイ','20','6/1','od20',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-01 03:48:37'),(23,2,'第１１３回更新！！\n皆さんからのお便り、待ってます♪','113','6/5','iso_120605_113',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-06 10:52:59'),(24,2,'第１３９回更新！！\nメンバーの卒業まで残りあとわずか・・・\n頑張る勇姿を見逃すなっ！！','139','6/5','PVJ_120605_139_net','メンバーの卒業まで残りあとわずか・・・\n彼女たちへの応援メッセージをお願いします。',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-06 10:54:42'),(25,2,'第１３回放送！！\nツイッターではやりの診断メーカーに挑戦！！','13','6/5','MJS_120605_13','今回はツイッターなどでもはやりの\n診断メーカーに挑戦！！\nさて、どんな言葉が飛び出すか！？',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-06 10:54:42'),(27,2,'第１回更新！！\n新番組開始！！オリジナルラジオドラマあり！\nトークあり！の３０分♪\n聴いてくれないと・・・処刑！しちゃうからね☆','1','6/8','majyoradio_120608_1','新番組開始！！\n        オリジナルラジオドラマあり！トークありの３０分！！\n        オープニングとエンディングもラジオオリジナルです♪\n        愚民共っ！感想メールを待ってるよ！！<br />',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-08 04:27:27'),(26,1,'<p>オリジナルラジオドラマ「まじょおーさまばくたん！」を中心に、\n魔女王様シオーヌとメイド長アルカがお届けするカオスな番組です！\n<br />\n愚民共よ！心して聞くように！もし忘れるような事があれば…\n<br />\n処刑！しちゃうからね☆\n</p>\n','../makai/main/top_banner.jpg','廣田詩夢とあきやまかおるのまじょおーさまばくたん！魔界政府広報部','声優「廣田詩夢」と「あきやまかおる」のラジオ番組！<br/>\nオリジナルラジオドラマ「まじょおーさまばくたん！」を中心に、 <br />\n魔女王様シオーヌとメイド長アルカがお届けするカオスな番組です！<br />\n<br />愚民共よ！心して聞くように！\n<br />もし忘れるような事があれば… 処刑！しちゃうからね☆','「ミッドナイトラブファントム」','愚民共の恋の悩みを解決する目安箱','「戦え魔界の社畜達」','愚民共の仕事の悩みを解決する目安箱','「もしもしBOX」','暇を持て余したお嬢様の為にアルカが用意した質問の数々',NULL,'2012-06-08 05:14:10'),(28,1,'<p>\n古き良きアニメソングを愛する人々が集ったV.S UNION。<br />\nオリジナルの同人誌、同人ゲーム、ドラマCD、ガレージキットなどに主題歌を作ったりなんかして<br />\n創作活動を展開しているみんなを応援したい番組!!<br />\n</p>','../vs/main/top_banner.png','バーサスWAVE','<p>\n古き良きアニメソングを愛する人々が集ったV.S UNION。<br />\nオリジナルの同人誌、同人ゲーム、ドラマCD、ガレージキットなどに主題歌を作ったりなんかして<br />\n創作活動を展開しているみんなを応援したい番組!!<br />\n</p>','オープニング〇〇,\n番組冒頭に叫ぶ一言。あなたの想いをぶつけて!,\n答えて V.S さん,\n挨拶と一緒に答えられる簡単な質問を募集します!!\n例:「好きなおでんの具は?」「旅行に行くならどこがいい?」「ぶっちゃけ、○○が弱点です!!,\n大地に立て、メカ総長!!,\n「いかにも総長こと泰勇気の言いそうなセリフ、言わせたいセリフ」を募集します。,\n他力本願キカクダー02,\n番組でオリジナルのストーリーを作ってみよう!!という訳で、\nその内容についてリスナーの皆さんからの意見を募集しております。,\nサークル・インフォメーション,\n立体、印刷物、ネット配信等の創作同人活動をしている方を応援。\nあなたのオリジナル物語、オリジナル作品をご紹介。各種イベントに参加するのならここで宣伝しよう!,\nふつおた紹介！！,\n普通のオタク・・・ではなく、普通のおたより(メール)を紹介するコーナー! 日々の報告からマニアックな質問、我々への要求など、幅広く募集します!! 「ふつおたあってこそラジオ番組!」たくさん待ってます!!',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-10 18:52:21'),(29,2,'第１回更新！！\n新番組開始！リニューアルしてぽけらで放送♪\nぜひみんな聴いてね♪','1','6/11','vsunion_120611_1',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-11 05:40:59'),(30,2,'第１１４回更新！！\n皆さんからのお便り、待ってます♪','114','6/12','iso_120612_114',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-12 12:23:43'),(31,2,'第１４０回更新！！\n「ぱわじゃむRainbow」の卒業スペシャル！！\nみんなぜひ聴いてね♪','140','6/12','PVJ_120612_140_net','「ぱわじゃむRainbow」の卒業スペシャル！！\nみんなの応援メッセージはまだまだ受付中♪,',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-13 13:16:15'),(32,2,'第１４回放送！！\n今回は木村・吉川の珍しいペアで番組をお届け','14','6/12','MJS_120612_14','今回は、えみちーとありさの珍しいコンビが登場！！',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-12 12:37:42'),(33,2,'第４０回更新！！\n「教えて！桜咲先生！！」が大好評！！\n お便り待ってます♪','40','6/15','seiyuu_120615_40','第４０回放送！！\n今日の声優戦士は「鎌田瑠奈（かまたるな）」さん♪','<p>Ｑ：今日は朝から仕事に追われて忙しい日でした。<br />疲れを癒すために仲間と共に、お酒を飲みに・・・<br />さんざん飲んで、気づいたらお店の場所とは違う場所にいました。<br /> あなたはどこにいましたか？<br /></p>\nＡ：ファミリーレストラン<br />Ｂ：クラブのトイレ<br />Ｃ：電車の中<br />Ｄ：自分のベッドの上</br />',NULL,NULL,NULL,NULL,NULL,'2012-06-15 14:15:28'),(34,2,'第３４回更新！\n公開録音の感想など、番組のお便りをお待ちしております！！','34','6/15','FT_120615_34',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-15 14:23:00'),(35,2,'第２回更新！！\nオリジナルラジオドラマの第２話も配信！！\nコーナーも始動！！お便り待ってます♪','2','6/15','majyoradio_120615_2','',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-15 14:28:10'),(36,2,'第１１５回更新！！\n皆さんからのお便り、待ってます♪','115','6/19','iso_120619_115',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-19 12:11:23'),(37,2,'第１４１回更新！！\nしろがねさんとしおんぬの2人だけの放送！！\nお楽しみに♪','141','6/19','PVJ_120619_141_net','今回は、しろがねさんとしおんぬの\n2人だけの放送！！',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-19 12:11:23'),(38,2,'第１５回放送！！\n今回も木村・吉川の珍しいペアで番組をお届け♪\nえみちーは誕生日を迎えました！！','15','6/19','MJS_120619_15','今回は、えみちーとありさの珍しいコンビが登場！！\nえみちーは２０歳の誕生日を迎えました！！',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-19 12:11:23'),(39,2,'第３回更新！！\nオリジナルラジオドラマの第３話も配信！！\n重大発表ありな、濃厚な３０分♪','3','6/22','majyoradio_120622_3','第３回配信！！\n今回は番組から重大発表がるよ。\n詳しくは番組を聴いてね♪',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-22 04:56:05'),(40,2,'第１１６回更新！！\n皆さんからのお便り、待ってます♪','116','6/26','iso_120626_116',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-28 16:04:25'),(41,2,'第１６回放送！！\n今回は木村・大柴のペアで番組をお届け♪\n大柴の舞台感想トークなど！！','16','6/26','MJS_120626_16','第１６回更新！！\n今回はパールとえみちーの二人！！',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-28 16:04:25'),(42,2,'第２回更新！！\n新番組開始！第２回目配信！！\nぜひみんな聴いてね♪','2','6/26','vsunion_120625_2',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-28 16:04:25'),(43,2,'第４１回更新！！\nオゥサキ・ドゥ・マドゥーイの写真は\n番組情報をチェックしてね♪','41','6/29','seiyuu_120629_41','第４１回放送！！\n今日の声優戦士は「　内田裕康（うちだひろやす）」くん♪','<p>Ｑ： 今日は私の誕生日。でも恋人は忘れているみたい。<br />あなたならどうする？<br /><br />A：気にしない<br />B：さりげなく教える<br />C：許せない、怒る<br />D：相手の誕生日に何もしてあげない。<br /></p>',NULL,NULL,NULL,NULL,NULL,'2012-06-29 03:31:03'),(44,2,'第３５回更新！\n皆様からのお便り、お待ちしております！！','35','6/29','FT_120629_35',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-29 03:31:03'),(45,2,'第４回更新！！\nオリジナルラジオドラマの第４話も配信！！\n今回も重大発表ありな、濃厚な３０分♪','4','6/29','majyoradio_120629_4','第４回更新！！\nオリジナルラジオドラマの第４話も配信！！\n今回も重大発表ありな、濃厚な３０分♪',NULL,NULL,NULL,NULL,NULL,NULL,'2012-06-29 03:31:03'),(46,2,'第１１７回更新！！\n番組へのお便り、リクエスト企画など、\nお待ちしております！！','117','7/3','iso_120703_117',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2012-07-05 06:05:24'),(47,2,'第１７回放送！！\n七夕が間近♪メンバーの願い事は・・・？','17','7/3','MJS_120703_17','七夕が近いので、七夕の思い出や\nメンバーの「願い事」を語ってもらいました♪',NULL,NULL,NULL,NULL,NULL,NULL,'2012-07-05 06:05:24');
+/*!40000 ALTER TABLE `pokela_blog_entry` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Temporary table structure for view `pokela_blog_entry_view_last`
+--
+
+DROP TABLE IF EXISTS `pokela_blog_entry_view_last`;
+/*!50001 DROP VIEW IF EXISTS `pokela_blog_entry_view_last`*/;
+/*!50001 CREATE TABLE `pokela_blog_entry_view_last` (
+  `name` varchar(128),
+  `full_name` varchar(128),
+  `type` varchar(128),
+  `cat_id` varchar(128),
+  `id` int(11),
+  `blog_id` int(11),
+  `content` text,
+  `field01` text,
+  `field02` text,
+  `field03` text,
+  `field04` text,
+  `field05` text,
+  `field06` text,
+  `field07` text,
+  `field08` text,
+  `field09` text,
+  `field10` text,
+  `ts` timestamp
+) ENGINE=MyISAM */;
+
+--
+-- Table structure for table `pokela_blog_master`
+--
+
+DROP TABLE IF EXISTS `pokela_blog_master`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `pokela_blog_master` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(512) default NULL,
+  `ts` timestamp NOT NULL default CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pokela_blog_master`
+--
+
+LOCK TABLES `pokela_blog_master` WRITE;
+/*!40000 ALTER TABLE `pokela_blog_master` DISABLE KEYS */;
+INSERT INTO `pokela_blog_master` VALUES (1,'番組案内','2012-06-01 03:48:28'),(2,'更新案内','2012-06-01 03:48:28');
+/*!40000 ALTER TABLE `pokela_blog_master` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Final view structure for view `pokela_blog_category_view`
+--
+
+/*!50001 DROP TABLE `pokela_blog_category_view`*/;
+/*!50001 DROP VIEW IF EXISTS `pokela_blog_category_view`*/;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `pokela_blog_category_view` AS select `m`.`name` AS `name`,`m`.`full_name` AS `full_name`,`t`.`ts` AS `ts`,`t`.`blog_id` AS `blog_id` from (`pokela_blog_category_master` `m` left join `pokela_blog_category` `t` on((`m`.`name` = `t`.`name`))) */;
+
+--
+-- Final view structure for view `pokela_blog_entry_view_last`
+--
+
+/*!50001 DROP TABLE `pokela_blog_entry_view_last`*/;
+/*!50001 DROP VIEW IF EXISTS `pokela_blog_entry_view_last`*/;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `pokela_blog_entry_view_last` AS select `m`.`name` AS `name`,`m`.`full_name` AS `full_name`,`c`.`type` AS `type`,`m`.`cat_id` AS `cat_id`,`e`.`id` AS `id`,`e`.`blog_id` AS `blog_id`,`e`.`content` AS `content`,`e`.`field01` AS `field01`,`e`.`field02` AS `field02`,`e`.`field03` AS `field03`,`e`.`field04` AS `field04`,`e`.`field05` AS `field05`,`e`.`field06` AS `field06`,`e`.`field07` AS `field07`,`e`.`field08` AS `field08`,`e`.`field09` AS `field09`,`e`.`field10` AS `field10`,`e`.`ts` AS `ts` from ((`pokela_blog_entry` `e` left join `pokela_blog_category` `c` on((`c`.`entry_id` = `e`.`id`))) left join `pokela_blog_category_master` `m` on((`m`.`name` = `c`.`name`))) where ((`c`.`type` = _utf8'entry') and `e`.`id` in (select max(`pokela_blog_category`.`entry_id`) AS `max(entry_id)` from `pokela_blog_category` group by `pokela_blog_category`.`name`)) */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2012-07-05 15:45:02
