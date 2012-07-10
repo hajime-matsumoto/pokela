@@ -10,16 +10,13 @@ class Pokela_Controller_Program extends Seaf_Controller
         $this->getFront()->getResponse()->setOutputEncode('cp932');
         $this->getFront()->getResponse()->addHeader('Content-Type', 'audio/x-ms-wax;');
 
-
-
         $this->blog = $blog = new Pokela_Model_Blog( );
 
-            // カテゴリを取得する
+        // カテゴリを取得する
         if( $req->num != "sp" )
         {
             $this->id = $req->id;
             $this->num = $req->num < 1 ? 1: $req->num;
-
 
             $res = Seaf_DB::getDefaultAdapter()->select( )
                 ->from('pokela_blog_category_master', '*')
