@@ -128,6 +128,7 @@ HTML;
                         <div id="{$head}-listen">
                           <ul>
                             <li><a href="program/wax/id/{$key}/num/1"><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#{$up[0]->getField01()}&nbsp;({$up[0]->getField02()})</li>
+                            <li><a href="program/wax/id/{$key}/num/2"><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#{$up[1]->getField01()}&nbsp;({$up[1]->getField02()})</li>
                             <!--<li><a href=""><img src="img/main/button_listen.gif" alt="聴く！" /></a><br />#YYY (YY/YY)</li>//-->
                           </ul>
                         </div><!-- end listen //-->

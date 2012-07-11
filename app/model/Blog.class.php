@@ -23,7 +23,7 @@ class Pokela_Model_Blog extends Seaf_Blog
         );
         $this->addCategory($id,$blog_id,'イソフラボンバー');
     }
-    public function yarooUpdate( $file, $date, $count, $head, $comment )
+    public function yarooUpdate( $file, $date, $count, $head, $comment = null)
     {
         $blog_id = $this->getIdByName('更新案内');
         $id = $this->replace( 
