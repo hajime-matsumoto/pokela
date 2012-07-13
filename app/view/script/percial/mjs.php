@@ -79,7 +79,7 @@ foreach( $up as $e ){
 <br />
 
 
-
+<!--
 <pre style="font-size:120%">
 ダニエルズ第1回公演
 「LIFE IS・・」
@@ -107,6 +107,7 @@ foreach( $up as $e ){
 
 予約は御名前、連絡先、日時を書いて048pearl@gmail.comまでお願いします！
 </pre>
+//-->
 
 				<br>
 			</center>
