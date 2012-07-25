@@ -106,6 +106,25 @@ foreach( $up as $e ){
   ごっとんは生きて収録を終えられるのか？ちょっとんのチャレンジ料理コーナー。<br>
   調理過程を見て青くなるごっとんも番組ページに随時アップしていきます。<br>
   <br>
+<?php
+$date = vsprintf("%02d%02d", explode('/',$up[0]->getField02()));
+foreach(explode("\n",`ls img/pf21/$date/od/ | sort -n`) as $file){
+    //$disp = mb_convert_encoding( $file, 'cp932','utf8');
+    $disp = $file;
+if(trim($disp)){
+printf('<a href="img/pf21/'.$date.'/od/%s">画像</a>%s<br>', $disp, str_replace('.jpg','',$disp));
+}
+}
+$date = vsprintf("%02d%02d", explode('/',$up[1]->getField02()));
+foreach(explode("\n",`ls img/pf21/$date/od/ | sort -n`) as $file){
+    //$disp = mb_convert_encoding( $file, 'cp932','utf8');
+    $disp = $file;
+if(trim($disp)){
+printf('<a href="img/pf21/'.$date.'/od/%s">画像</a>%s<br>', $disp, str_replace('.jpg','',$disp));
+}
+}
+?>
+<br>
 
             <font size="3">第<?php echo $up[0]->getField01();?>回の番組内容は！！</font><br />
 ◆解析！真相心理<br/>
@@ -120,17 +139,6 @@ echo $up[0]->getField05();
             <p><br>
             ◆レッドのオゥサキ・ドゥ・マドゥーイ<br><br>
 
-<?php
-$date = vsprintf("%02d%02d", explode('/',$up[0]->getField02()));
-foreach(explode("\n",`ls img/pf21/$date/od/ | sort -n`) as $file){
-    //$disp = mb_convert_encoding( $file, 'cp932','utf8');
-    $disp = $file;
-if(trim($disp)){
-printf('<a href="img/pf21/'.$date.'/od/%s">画像</a>%s<br>', $disp, str_replace('.jpg','',$disp));
-}
-}
-?>
-<br>
   ■鼻歌即興教室！<br>
   とうとうジングルまでコーナー化しちゃいました。パート２<br>
   既存のものなんて使いません・使わせません！<br>

@@ -27,7 +27,8 @@ $blog->mjsUpdate(
     $date,
     20,
     "祝２０回放送！！
-夏のスイーツの話♪"
+夏のスイーツの話♪",
+    ""
 );
 /*
 $blog->vsUpdate(

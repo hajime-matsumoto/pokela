@@ -231,6 +231,25 @@ foreach( $up as $e ){
 //-->
 
 
+<?php
+$date = vsprintf("%02d%02d", explode('/',$up[0]->getField02()));
+foreach(explode("\n",`ls img/pf21/$date/od/ | sort -n`) as $file){
+    //$disp = mb_convert_encoding( $file, 'cp932','utf8');
+    $disp = $file;
+if(trim($disp)){
+printf('<img src="img/pf21/'.$date.'/od/%s" width="320" border="1" /><br>%s<br><br>', $disp, str_replace('.jpg','',$disp));
+}
+}
+$date = vsprintf("%02d%02d", explode('/',$up[1]->getField02()));
+foreach(explode("\n",`ls img/pf21/$date/od/ | sort -n`) as $file){
+    //$disp = mb_convert_encoding( $file, 'cp932','utf8');
+    $disp = $file;
+if(trim($disp)){
+printf('<img src="img/pf21/'.$date.'/od/%s" width="320" border="1" /><br>%s<br><br>', $disp, str_replace('.jpg','',$disp));
+}
+}
+?>
+
             <font size="3">第<?php echo $up[0]->getField01();?>回の番組内容は！！</font><br />
 ◆解析！真相心理<br />
 　次回の解析深層心理は・・・ <br />
@@ -242,17 +261,6 @@ echo $up[0]->getField05();
             　次回を待て！！</p>
 <br />
 <br />
-<?php
-$date = vsprintf("%02d%02d", explode('/',$up[0]->getField02()));
-foreach(explode("\n",`ls img/pf21/$date/od/ | sort -n`) as $file){
-    //$disp = mb_convert_encoding( $file, 'cp932','utf8');
-    $disp = $file;
-if(trim($disp)){
-printf('<img src="img/pf21/'.$date.'/od/%s" width="320" border="1" /><br>%s<br><br>', $disp, str_replace('.jpg','',$disp));
-}
-}
-?>
-
 <!--
 <img src="img/pf21/0406/od/1.jpg" width="320" border="1" /><br>さあ、今日のメニューは…「湯豆腐」♪これ以上簡単なものはないはず…<br><br>
 <img src="img/pf21/0406/od/2.jpg" width="320" border="1" /><br>ちょっとん!!ネギは折るものじゃありません！<br><br>

@@ -66,7 +66,7 @@ $this->headMeta( )->setDescription("長谷優里奈のイソフラボン☆バa"
             <span class="s">ラジオステーション「響」さんにて、毎週水曜日配信中！（ぽけらから一週間遅れの 放送です。見逃した方は「響」さんへ）</span><br />
             <br />
             </font> <br /></p></blockquote>
-<img name="/img/pf11/20120724_hon.jpg" width="300px" />
+<img src="/img/pf11/20120724_hon.jpg" width="300px" />
 <pre>
 「先生、あのね」のラジオドラマ脚本担当の
 「沢上水也」先生の新刊が発売されました！！

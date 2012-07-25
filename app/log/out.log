@@ -27,3 +27,92 @@
 2012-07-11 15:03:35 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "yaroo_120711_2" LIMIT 0,1;
 2012-07-11 15:03:35 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "男気溢れるラジオの第２回！！\nいろんなコーナーも決まり、本格的なラジオになってきたぞ！！\n第２回目もお聴きのがしなく！！！",`field01` = "2",`field02` = "7/11",`field03` = "yaroo_120711_2",`field04` = "",`id` = "54" WHERE id = "54"
 2012-07-11 15:03:35 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "54" && name = "YAROO" LIMIT 0,1;
+2012-07-13 17:31:47 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-13 17:31:47 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-13 17:31:47 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "majyoradio_120713_6" LIMIT 0,1;
+2012-07-13 17:31:47 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04` ) VALUES ("2","第６回更新！！\nオリジナルラジオドラマの第６も配信！！\n新キャラが登場だよ！！","6","7/13","majyoradio_120713_6","第６回更新！！\nドラマは新キャラが登場！！\n気になるキャストさんは、番組でチェックしてね♪")
+2012-07-13 17:31:47 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "55" && name = "魔界政府広報部" LIMIT 0,1;
+2012-07-13 17:31:47 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("55","entry","2","魔界政府広報部")
+2012-07-13 17:31:47 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-13 17:31:47 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "FT_120713_36" LIMIT 0,1;
+2012-07-13 17:31:47 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03` ) VALUES ("2","第３６回更新！\n今回からテーマ曲が変わりました！！\nぜひ聴いてください♪","36","7/13","FT_120713_36")
+2012-07-13 17:31:47 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "56" && name = "やりすぎソーサラー" LIMIT 0,1;
+2012-07-13 17:31:47 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("56","entry","2","やりすぎソーサラー")
+2012-07-13 17:31:47 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-13 17:31:47 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "seiyuu_120713_42" LIMIT 0,1;
+2012-07-13 17:31:47 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04`,`field05` ) VALUES ("2","第４２回更新！！\n「教えて！桜咲先生」が大好評♪","42","7/13","seiyuu_120713_42","第４２回放送！！\n今日の声優戦士は「　榎本圭佑（えのもとけいすけ）」くん♪","<p>Ｑ： コーラをコップにそそぐ時、あなたはどんな風にそそぐ？<br /><br />\nA：コップの半分<br />\nB：コップの七分目<br />\nC：ギリギリまでそそぐ<br />\nD：泡の様子で決める</p>")
+2012-07-13 17:31:47 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "57" && name = "トリラジ" LIMIT 0,1;
+2012-07-13 17:31:47 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("57","entry","2","トリラジ")
+2012-07-17 12:30:30 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-17 12:30:30 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-17 12:30:30 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "iso_120717_119" LIMIT 0,1;
+2012-07-17 12:30:30 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03` ) VALUES ("2","第１１９回更新！！\n「豆乳チャレンジ」のコーナー\nなど盛りだくさん！！","119","7/17","iso_120717_119")
+2012-07-17 12:30:30 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "58" && name = "イソフラボンバー" LIMIT 0,1;
+2012-07-17 12:30:30 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("58","entry","2","イソフラボンバー")
+2012-07-17 12:30:30 php-warning [warning(8)] Missing argument 5 for Pokela_Model_Blog::mjsUpdate(), called in /home/kurari/pokela/script/update.20120717.php on line 31 and defined in /home/kurari/pokela/app/model/Blog.class.php line 60
+2012-07-17 12:30:30 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-17 12:30:30 php-notice [notice(4)] Undefined variable: comment in /home/kurari/pokela/app/model/Blog.class.php line 71
+2012-07-17 12:30:30 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "MJS_120717_19" LIMIT 0,1;
+2012-07-17 12:30:30 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04` ) VALUES ("2","第１９回放送！！\n夏のイベントに向けてのお悩みの\nお便りにどう答える！？","19","7/17","MJS_120717_19","")
+2012-07-17 12:30:30 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "59" && name = "レインボウ" LIMIT 0,1;
+2012-07-17 12:30:30 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("59","entry","2","レインボウ")
+2012-07-17 12:31:16 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-17 12:31:16 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-17 12:31:16 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "iso_120717_119" LIMIT 0,1;
+2012-07-17 12:31:16 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第１１９回更新！！\n「豆乳チャレンジ」のコーナー\nなど盛りだくさん！！",`field01` = "119",`field02` = "7/17",`field03` = "iso_120717_119",`id` = "58" WHERE id = "58"
+2012-07-17 12:31:16 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "58" && name = "イソフラボンバー" LIMIT 0,1;
+2012-07-17 12:31:16 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-17 12:31:16 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "MJS_120717_19" LIMIT 0,1;
+2012-07-17 12:31:16 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第１９回放送！！\n夏のイベントに向けてのお悩みの\nお便りにどう答える！？",`field01` = "19",`field02` = "7/17",`field03` = "MJS_120717_19",`field04` = "第１９回更新！\n今回はパールと、みけの二人でお届け！！\nお化け屋敷の克服の仕方とは・・・？",`id` = "59" WHERE id = "59"
+2012-07-17 12:31:16 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "59" && name = "レインボウ" LIMIT 0,1;
+2012-07-18 14:22:56 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-18 14:22:56 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-18 14:22:56 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "yaroo_120718_3" LIMIT 0,1;
+2012-07-18 14:22:56 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04` ) VALUES ("2","男気溢れるラジオの第３回！！\nなんと、ゲストも登場！？\nロックなデラックスなお便り、お待ちしてます！！","3","7/18","yaroo_120718_3","男気溢れるラジオの第３回！！\n今回は、ゲストに「30－DELUXの森大さん」が登場！！\nロックなデラックスなお便り、お待ちしてます！！")
+2012-07-18 14:22:56 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "60" && name = "YAROO" LIMIT 0,1;
+2012-07-18 14:22:56 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("60","entry","2","YAROO")
+2012-07-20 12:48:23 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-20 12:48:23 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-20 12:48:23 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "majyoradio_120720_7" LIMIT 0,1;
+2012-07-20 12:48:23 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04` ) VALUES ("2","第７回更新！！\nオリジナルラジオドラマの第７話も配信！！\n素敵な情報も盛りだくさん♪","7","7/20","majyoradio_120720_7","第７回更新！！\n夏に向けて、色々動き出す企画が盛りだくさん！！\nお便りをどんどん出して採用されると「階級」が上がる！？\n詳細は近日公開♪\nチェックしないと、処刑☆しちゃうからね")
+2012-07-20 12:48:23 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "61" && name = "魔界政府広報部" LIMIT 0,1;
+2012-07-20 12:48:23 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("61","entry","2","魔界政府広報部")
+2012-07-24 21:47:51 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-24 21:47:51 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-24 21:47:51 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "iso_120724_120" LIMIT 0,1;
+2012-07-24 21:47:51 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03` ) VALUES ("2","第１２０回更新！！\n今回は「先生、あのね」の第５話配信！！\nまた番組から素敵なプレゼント情報あり。\n詳細は番組情報をチェック！！","120","7/24","iso_120724_120")
+2012-07-24 21:47:51 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "62" && name = "イソフラボンバー" LIMIT 0,1;
+2012-07-24 21:47:51 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("62","entry","2","イソフラボンバー")
+2012-07-24 21:47:52 php-warning [warning(8)] Missing argument 5 for Pokela_Model_Blog::mjsUpdate(), called in /home/kurari/pokela/script/update.20120724.php on line 31 and defined in /home/kurari/pokela/app/model/Blog.class.php line 60
+2012-07-24 21:47:52 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-24 21:47:52 php-notice [notice(4)] Undefined variable: comment in /home/kurari/pokela/app/model/Blog.class.php line 71
+2012-07-24 21:47:52 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "MJS_120724_20" LIMIT 0,1;
+2012-07-24 21:47:52 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04` ) VALUES ("2","祝２０回放送！！\n夏のスイーツの話♪","20","7/24","MJS_120724_20","")
+2012-07-24 21:47:52 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "63" && name = "レインボウ" LIMIT 0,1;
+2012-07-24 21:47:52 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("63","entry","2","レインボウ")
+2012-07-24 21:48:40 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-24 21:48:41 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-24 21:48:41 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "iso_120724_120" LIMIT 0,1;
+2012-07-24 21:48:41 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第１２０回更新！！\n今回は「先生、あのね」の第５話配信！！\nまた番組から素敵なプレゼント情報あり。\n詳細は番組情報をチェック！！",`field01` = "120",`field02` = "7/24",`field03` = "iso_120724_120",`id` = "62" WHERE id = "62"
+2012-07-24 21:48:41 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "62" && name = "イソフラボンバー" LIMIT 0,1;
+2012-07-24 21:48:41 php-warning [warning(8)] Missing argument 5 for Pokela_Model_Blog::mjsUpdate(), called in /home/kurari/pokela/script/update.20120724.php on line 32 and defined in /home/kurari/pokela/app/model/Blog.class.php line 60
+2012-07-24 21:48:41 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-24 21:48:41 php-notice [notice(4)] Undefined variable: comment in /home/kurari/pokela/app/model/Blog.class.php line 71
+2012-07-24 21:48:41 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "MJS_120724_20" LIMIT 0,1;
+2012-07-24 21:48:41 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "祝２０回放送！！\n夏のスイーツの話♪\n    ",`field01` = "20",`field02` = "7/24",`field03` = "MJS_120724_20",`field04` = "",`id` = "63" WHERE id = "63"
+2012-07-24 21:48:41 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "63" && name = "レインボウ" LIMIT 0,1;
+2012-07-24 21:48:55 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-24 21:48:55 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-24 21:48:55 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "iso_120724_120" LIMIT 0,1;
+2012-07-24 21:48:55 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第１２０回更新！！\n今回は「先生、あのね」の第５話配信！！\nまた番組から素敵なプレゼント情報あり。\n詳細は番組情報をチェック！！",`field01` = "120",`field02` = "7/24",`field03` = "iso_120724_120",`id` = "62" WHERE id = "62"
+2012-07-24 21:48:55 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "62" && name = "イソフラボンバー" LIMIT 0,1;
+2012-07-24 21:48:55 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-24 21:48:55 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "MJS_120724_20" LIMIT 0,1;
+2012-07-24 21:48:55 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "祝２０回放送！！\n夏のスイーツの話♪",`field01` = "20",`field02` = "7/24",`field03` = "MJS_120724_20",`field04` = "",`id` = "63" WHERE id = "63"
+2012-07-24 21:48:55 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "63" && name = "レインボウ" LIMIT 0,1;
+2012-07-25 20:36:02 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-25 20:36:02 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-25 20:36:02 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "yaroo_120725_4" LIMIT 0,1;
+2012-07-25 20:36:02 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04` ) VALUES ("2","男気溢れるラジオの第４回！！\n今回も「森大」くんが登場！！","4","7/25","yaroo_120725_4","")
+2012-07-25 20:36:02 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "64" && name = "YAROO" LIMIT 0,1;
+2012-07-25 20:36:02 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("64","entry","2","YAROO")
