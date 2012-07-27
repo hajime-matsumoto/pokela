@@ -92,6 +92,23 @@ class Pokela_Model_Blog extends Seaf_Blog
         $this->addCategory($id,$blog_id,'トリラジ');
     }
 
+    public function odUpdate( $file, $date, $count )
+    {
+        $blog_id = $this->getIdByName('更新案内');
+        // オゥサキの更新も通知する
+        $id = $this->replace( 
+            array('field03 = ?', $file)
+            ,array(
+                'blog_id' => $blog_id,
+                'content' => "オゥサキ・ドゥ・マドゥーイ",
+                'field01' => $count,
+                'field02' => $date,
+                'field03' => $file 
+            )
+        );
+        $this->addCategory($id,$blog_id,'オオサキ');
+    }
+
     public function ftUpdate( $file, $date, $count, $head )
     {
         $blog_id = $this->getIdByName('更新案内');
