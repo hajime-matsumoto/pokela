@@ -39,17 +39,46 @@ $this->headMeta( )->setDescription("番組タイトル：廣田詩夢とあき�
 
 </blockquote>
 <center>
+<img src='img/makai/majyoradio_7.jpg' width='400'  border='1'>
+</center>
+<pre style="font-size:120%;color:red;margin-left:70px">
+「まじょおーさまばくたん！魔界政府広報部」のライトノベルとドラマＣＤが発売！！
 
+
+「まじょおーさまばくたん！魔界政府広報部」関連グッズが夏コミで発売されます！
+その内容とは・・・・
+
+☆「まじょおーさまばくたん！魔界政府広報部」のライトノベル（先行発売）
+　＊一般発売は８月１５日
+☆「まじょおーさまばくたん！魔界政府広報部」ドラマＣＤ
+　内容は、ラジオドラマ１０話分、ラジオのオープニング＆エンディング曲、
+　そして、ルナナ役の「大橋歩夕」ちゃんも交えての３人のフリートークも入った
+　豪華版！！
+☆「まじょおーさまばくたん！魔界政府広報部」関連グッズ
+
+
+８月１０日～８月１２日に開催される夏コミにて、
+クリア文庫さんのブースとなります。
+
+「あきやまかおると廣田詩夢の二人のお渡し会」は、
+８月１０日（金）１４時～１５時　のみとなります。
+この日に来ていただいた方は、ライトノベルにお二人のサインが入ります♪
+またドラマＣＤには、非売品のポストカードに二人の直筆サインもプレゼント！！
+こちらは、８月１０日のみとなります。
+
+愚民共よ！心して来るように！もし来ない事があれば・・・
+処刑！しちゃうからね☆
+<center>
 <?php 
 foreach( $up as $e ){
     $date = vsprintf("%02d%02d", explode('/',$e->getField02()));
     $img = "/home/kurari/pokela/public/img/makai/majyoradio_{$e->getField01()}.jpg";
     if(file_exists($img)){
-        echo "<img src='img/makai/majyoradio_{$e->getField01()}.jpg' width='400'  border='1'> <br>";
+//        echo "<img src='img/makai/majyoradio_{$e->getField01()}.jpg' width='400'  border='1'> <br>";
     }
     // echo $img;
-    echo nl2br($e->getField04());
-    echo "<br />";
+//    echo nl2br($e->getField04());
+//    echo "<br />";
 }
 ?>
  </td>

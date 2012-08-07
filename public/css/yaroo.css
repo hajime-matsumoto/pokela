@@ -3,6 +3,7 @@
  */
 div#yaroo
 {
+	margin-bottom : 10px;
 	position : relative;
 	top : 10px;
 	width : 490px;

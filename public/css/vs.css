@@ -35,6 +35,7 @@ div#vs-logo
 
 div#vs
 {
+	margin-top : 5px;
 	position : relative;
 	background : top url('../img/main/block_vs_top.gif') no-repeat;
 }

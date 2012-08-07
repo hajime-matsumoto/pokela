@@ -116,3 +116,96 @@
 2012-07-25 20:36:02 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04` ) VALUES ("2","男気溢れるラジオの第４回！！\n今回も「森大」くんが登場！！","4","7/25","yaroo_120725_4","")
 2012-07-25 20:36:02 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "64" && name = "YAROO" LIMIT 0,1;
 2012-07-25 20:36:02 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("64","entry","2","YAROO")
+2012-07-27 9:39:50 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-27 9:39:50 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-27 9:39:50 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "majyoradio_120727_8" LIMIT 0,1;
+2012-07-27 9:39:50 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04` ) VALUES ("2","第８回更新！！\nコミケの情報も要チェック♪","8","7/27","majyoradio_120727_8","第８回更新！！\n今回はコミケで発売されるＣＤの話が盛りだくさん！！\nぜひ、番組をチェックしてね♪")
+2012-07-27 9:39:50 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "65" && name = "魔界政府広報部" LIMIT 0,1;
+2012-07-27 9:39:50 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("65","entry","2","魔界政府広報部")
+2012-07-27 9:39:50 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-27 9:39:50 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "FT_120727_37" LIMIT 0,1;
+2012-07-27 9:39:50 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03` ) VALUES ("2","第３７回更新！\n夏休みスペシャル！？たくさんのお便り、\nお待ちしております♪","37","7/27","FT_120727_37")
+2012-07-27 9:39:50 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "66" && name = "やりすぎソーサラー" LIMIT 0,1;
+2012-07-27 9:39:50 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("66","entry","2","やりすぎソーサラー")
+2012-07-27 9:39:50 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-27 9:39:50 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "seiyuu_120727_43" LIMIT 0,1;
+2012-07-27 9:39:50 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04`,`field05` ) VALUES ("2","第４３回更新！！\nオゥサキ・ドゥ・マドゥーイの写真は\n番組情報をチェックしてね♪","43","7/27","seiyuu_120727_43","第４３回放送！！\n今日の声優戦士は「　小宮法将（こみやのりまさ）」くん♪","<p>Ｑ： レストランや喫茶店で注文をするとき、\nあなたは迷いやすい方ですか？すぐ決める方ですか？<br /><br />\nA：たいてい決まった物を注文する<br />\nB：メニューをじっくり見て、ゆっくり決める<br />\nC：凝った料理や難しそうな料理を注文する<br />\nD：人と同じものを注文する</p>")
+2012-07-27 9:39:50 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "67" && name = "トリラジ" LIMIT 0,1;
+2012-07-27 9:39:50 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("67","entry","2","トリラジ")
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "majyoradio_120727_8" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第８回更新！！\nコミケの情報も要チェック♪",`field01` = "8",`field02` = "7/27",`field03` = "majyoradio_120727_8",`field04` = "第８回更新！！\n今回はコミケで発売されるＣＤの話が盛りだくさん！！\nぜひ、番組をチェックしてね♪",`id` = "65" WHERE id = "65"
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "65" && name = "魔界政府広報部" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "FT_120727_37" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第３７回更新！\n夏休みスペシャル！？たくさんのお便り、\nお待ちしております♪",`field01` = "37",`field02` = "7/27",`field03` = "FT_120727_37",`id` = "66" WHERE id = "66"
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "66" && name = "やりすぎソーサラー" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "seiyuu_120727_43" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第４３回更新！！\nオゥサキ・ドゥ・マドゥーイの写真は\n番組情報をチェックしてね♪",`field01` = "43",`field02` = "7/27",`field03` = "seiyuu_120727_43",`field04` = "第４３回放送！！\n今日の声優戦士は「　小宮法将（こみやのりまさ）」くん♪",`field05` = "<p>Ｑ： レストランや喫茶店で注文をするとき、\nあなたは迷いやすい方ですか？すぐ決める方ですか？<br /><br />\nA：たいてい決まった物を注文する<br />\nB：メニューをじっくり見て、ゆっくり決める<br />\nC：凝った料理や難しそうな料理を注文する<br />\nD：人と同じものを注文する</p>",`id` = "67" WHERE id = "67"
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "67" && name = "トリラジ" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "od22" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03` ) VALUES ("2","オゥサキ・ドゥ・マドゥーイ","22","7/27","od22")
+2012-07-27 9:40:32 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "68" && name = "オオサキ" LIMIT 0,1;
+2012-07-27 9:40:32 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("68","entry","2","オオサキ")
+2012-08-01 2:34:17 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 2:34:18 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 2:34:18 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "iso_120731_121" LIMIT 0,1;
+2012-08-01 2:34:18 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03` ) VALUES ("2","第１２１回更新！！\n「先生、あのね」の脚本を書いている「沢上先生」\nから素敵なプレゼント情報あり。\n詳細は番組情報をチェック！！","121","7/31","iso_120731_121")
+2012-08-01 2:34:18 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "69" && name = "イソフラボンバー" LIMIT 0,1;
+2012-08-01 2:34:18 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("69","entry","2","イソフラボンバー")
+2012-08-01 2:34:18 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 2:34:18 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "MJS_120731_21" LIMIT 0,1;
+2012-08-01 2:34:18 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04` ) VALUES ("2","祝２１回放送！！\n番組初の女性からのメールに、\nメンバーが大盛り上がり♪","20","7/31","MJS_120731_21","")
+2012-08-01 2:34:18 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "70" && name = "レインボウ" LIMIT 0,1;
+2012-08-01 2:34:18 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("70","entry","2","レインボウ")
+2012-08-01 10:52:28 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 10:52:28 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 10:52:28 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "vsunion_120723_4" LIMIT 0,1;
+2012-08-01 10:52:28 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03` ) VALUES ("2","第４回更新！！\n更新、お待たせしました！！\n皆さんからのお便り、待ってます！！","3","7/23","vsunion_120723_4")
+2012-08-01 10:52:28 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "71" && name = "バーサスWAVE" LIMIT 0,1;
+2012-08-01 10:52:28 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("71","entry","2","バーサスWAVE")
+2012-08-01 10:54:00 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 10:54:00 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 10:54:00 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "yaroo_120801_5" LIMIT 0,1;
+2012-08-01 10:54:00 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04` ) VALUES ("2","男気溢れるラジオの第５回！！\n    アルスマグナの「アキラ」君がゲストで登場！！","3","8/1","yaroo_120801_5","ゲストにアルスマグナの「アキラ」君が登場！！\n皆さんからのお便り、待ってます！！")
+2012-08-01 10:54:00 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "72" && name = "YAROO" LIMIT 0,1;
+2012-08-01 10:54:00 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("72","entry","2","YAROO")
+2012-08-01 10:57:08 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 10:57:08 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 10:57:08 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "vsunion_120723_4" LIMIT 0,1;
+2012-08-01 10:57:08 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第４回更新！！\n更新、お待たせしました！！\n皆さんからのお便り、待ってます！！",`field01` = "3",`field02` = "7/23",`field03` = "vsunion_120723_4",`id` = "71" WHERE id = "71"
+2012-08-01 10:57:08 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "71" && name = "バーサスWAVE" LIMIT 0,1;
+2012-08-01 10:57:21 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 10:57:21 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 10:57:21 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "vsunion_120723_4" LIMIT 0,1;
+2012-08-01 10:57:21 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第４回更新！！\n更新、お待たせしました！！\n皆さんからのお便り、待ってます！！",`field01` = "4",`field02` = "7/23",`field03` = "vsunion_120723_4",`id` = "71" WHERE id = "71"
+2012-08-01 10:57:21 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "71" && name = "バーサスWAVE" LIMIT 0,1;
+2012-08-01 10:57:30 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 10:57:30 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-01 10:57:30 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "yaroo_120801_5" LIMIT 0,1;
+2012-08-01 10:57:30 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "男気溢れるラジオの第５回！！\n    アルスマグナの「アキラ」君がゲストで登場！！",`field01` = "5",`field02` = "8/1",`field03` = "yaroo_120801_5",`field04` = "ゲストにアルスマグナの「アキラ」君が登場！！\n皆さんからのお便り、待ってます！！",`id` = "72" WHERE id = "72"
+2012-08-01 10:57:30 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "72" && name = "YAROO" LIMIT 0,1;
+2012-08-03 16:12:45 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-03 16:12:45 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-03 16:12:45 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "majyoradio_120803_9" LIMIT 0,1;
+2012-08-03 16:12:45 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04` ) VALUES ("2","第９回更新！！\nコミケＣＤ発売情報など、\n番組情報をチェックしてね♪","8","8/03","majyoradio_120803_9","")
+2012-08-03 16:12:45 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "73" && name = "魔界政府広報部" LIMIT 0,1;
+2012-08-03 16:12:45 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("73","entry","2","魔界政府広報部")
+2012-08-03 16:22:26 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-03 16:22:26 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-03 16:22:26 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "majyoradio_120803_9" LIMIT 0,1;
+2012-08-03 16:22:26 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第９回更新！！\nコミケＣＤ発売情報など、\n番組情報をチェックしてね♪",`field01` = "8",`field02` = "8/03",`field03` = "majyoradio_120803_9",`field04` = "第９回更新！！\nコミケＣＤ発売情報など、\n番組情報をチェックしてね♪",`id` = "73" WHERE id = "73"
+2012-08-03 16:22:26 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "73" && name = "魔界政府広報部" LIMIT 0,1;
+2012-08-03 16:23:24 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-03 16:23:24 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-03 16:23:24 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "majyoradio_120803_9" LIMIT 0,1;
+2012-08-03 16:23:24 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第９回更新！！\nコミケＣＤ発売情報など、\n番組情報をチェックしてね♪",`field01` = "8",`field02` = "8/3",`field03` = "majyoradio_120803_9",`field04` = "第９回更新！！\nコミケＣＤ発売情報など、\n番組情報をチェックしてね♪",`id` = "73" WHERE id = "73"
+2012-08-03 16:23:24 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "73" && name = "魔界政府広報部" LIMIT 0,1;
+2012-08-06 2:29:01 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-06 2:29:01 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-06 2:29:01 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "majyoradio_120803_9" LIMIT 0,1;
+2012-08-06 2:29:01 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第９回更新！！\nコミケＣＤ発売情報など、\n番組情報をチェックしてね♪",`field01` = "9",`field02` = "8/3",`field03` = "majyoradio_120803_9",`field04` = "第９回更新！！\nコミケＣＤ発売情報など、\n番組情報をチェックしてね♪",`id` = "73" WHERE id = "73"
+2012-08-06 2:29:01 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "73" && name = "魔界政府広報部" LIMIT 0,1;
