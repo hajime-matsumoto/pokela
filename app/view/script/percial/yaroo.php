@@ -54,6 +54,32 @@ foreach( $up as $e ){
 }
 ?>
 </center>
+
+<pre>
+皆さんからのお便りお待ちしております。
+ブログ・ツイッターへの書き込みもお便りとして採用しちゃうよ。
+どんどん、書き込んでください！！
+お待ちしております！！
+
+
+■清水順二　公式ブログＧＲＥＥ
+<a href="http://gree.jp/shimizu_junji/">http://gree.jp/shimizu_junji/</a>
+
+
+■田中精　ブログ「田中精日記/ Team Bomb The Twist
+
+<a href="http://bombthetwist.jugem.jp/?cid=3">http://bombthetwist.jugem.jp/?cid=3</a>
+ツイッター
+<a href="https://twitter.com/sugurutanaka16">https://twitter.com/sugurutanaka16</a>
+
+
+■ロック兄弟　ツイッター
+<a href="https://twitter.com/ROCK_BROTHERS">https://twitter.com/ROCK_BROTHERS</a>
+
+
+■お友達の電撃チョモランマ隊オフィシャルブログ「チョモブロ」
+<a href="http://ameblo.jp/den-qomo/">http://ameblo.jp/den-qomo/</a>
+</pre>
 </div>
 
 </blockquote>

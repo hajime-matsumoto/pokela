@@ -24,7 +24,7 @@
    <td valign="top"><blockquote>
        <h2>番組名：ぱわじゃむRainbowのMini Jam Show!!</h2>
 				 <center>
-				<img src="./img/mjs/top.jpg" alt="ぱわじゃむRainbowのMini Jam Show!!" border="1" /><br>
+				<img src="./img/mjs/top.jpg" alt="ぱわじゃむRainbowのMini Jam Show!!" border="1" width="400px"/><br>
 			</center>
 			<br>
        <font size="2"> 

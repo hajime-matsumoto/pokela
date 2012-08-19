@@ -38,6 +38,8 @@ $this->headMeta( )->setDescription("番組タイトル：廣田詩夢とあき�
         　<font color="#FF0000">隔週月曜日更新 </font><br>
 <?php echo $prog->getContent( ); ?>
 
+<img src="img/vs/vs_5.jpg" width="400px"/>
+
 
 </blockquote>
 <center>

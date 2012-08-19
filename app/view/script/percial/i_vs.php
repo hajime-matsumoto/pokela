@@ -17,6 +17,7 @@ V.S UNION WAVE
 <p>
 <?php echo $prog->getContent( ); ?>
 </p>
+<a href="img/vs/vs_5.jpg">写真</a>
 </font>
   <br>
 	<br>
