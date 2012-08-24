@@ -291,3 +291,47 @@
 2012-08-18 4:38:59 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "majyoradio_120817_11" LIMIT 0,1;
 2012-08-18 4:38:59 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第11回更新！！8.24公開録音が決定♪\nまた、一部の書店ではサイン入りノベルが販売☆\n番組をチェックしてね♪",`field01` = "11",`field02` = "8/17",`field03` = "majyoradio_120817_11",`field04` = "",`id` = "84" WHERE id = "84"
 2012-08-18 4:38:59 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "84" && name = "魔界政府広報部" LIMIT 0,1;
+2012-08-20 5:22:13 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:22:13 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:22:13 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "iso_120821_124" LIMIT 0,1;
+2012-08-20 5:22:13 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03` ) VALUES ("2","第１２４回更新！！\n豆乳のチャレンジのコーナーなど\nガールズトークが盛りだくさん♪","124","8/21","iso_120821_124")
+2012-08-20 5:22:13 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "85" && name = "イソフラボンバー" LIMIT 0,1;
+2012-08-20 5:22:13 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("85","entry","2","イソフラボンバー")
+2012-08-20 5:22:13 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:22:13 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "MJS_120814_23" LIMIT 0,1;
+2012-08-20 5:22:13 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第２４回放送！！\n夏休みの宿題は最初にやる派？\n後にやる派？",`field01` = "23",`field02` = "8/21",`field03` = "MJS_120814_23",`field04` = "",`id` = "82" WHERE id = "82"
+2012-08-20 5:22:13 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "82" && name = "レインボウ" LIMIT 0,1;
+2012-08-20 5:24:16 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:24:16 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:24:16 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "yaroo_120822_8" LIMIT 0,1;
+2012-08-20 5:24:16 db [debug(1)] INSERT INTO pokela_blog_entry ( `blog_id`,`content`,`field01`,`field02`,`field03`,`field04` ) VALUES ("2","","男気溢れるラジオの第８回！！\n  今回もゲストに「30－DELUX」の「天野博一」が登場！！","8/22","yaroo_120822_8","")
+2012-08-20 5:24:16 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "86" && name = "YAROO" LIMIT 0,1;
+2012-08-20 5:24:16 db [debug(1)] INSERT INTO pokela_blog_category ( `entry_id`,`type`,`blog_id`,`name` ) VALUES ("86","entry","2","YAROO")
+2012-08-20 5:30:12 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:30:12 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:30:12 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "iso_120821_124" LIMIT 0,1;
+2012-08-20 5:30:12 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第１２４回更新！！\n豆乳のチャレンジのコーナーなど\nガールズトークが盛りだくさん♪",`field01` = "124",`field02` = "8/21",`field03` = "iso_120821_124",`id` = "85" WHERE id = "85"
+2012-08-20 5:30:12 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "85" && name = "イソフラボンバー" LIMIT 0,1;
+2012-08-20 5:30:12 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:30:12 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "MJS_120814_23" LIMIT 0,1;
+2012-08-20 5:30:12 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第２４回放送！！\n夏休みの宿題は最初にやる派？\n後にやる派？",`field01` = "23",`field02` = "8/21",`field03` = "MJS_120814_23",`field04` = "",`id` = "82" WHERE id = "82"
+2012-08-20 5:30:12 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "82" && name = "レインボウ" LIMIT 0,1;
+2012-08-20 5:30:30 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:30:30 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:30:30 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "iso_120821_124" LIMIT 0,1;
+2012-08-20 5:30:30 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第１２４回更新！！\n豆乳のチャレンジのコーナーなど\nガールズトークが盛りだくさん♪",`field01` = "124",`field02` = "8/21",`field03` = "iso_120821_124",`id` = "85" WHERE id = "85"
+2012-08-20 5:30:30 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "85" && name = "イソフラボンバー" LIMIT 0,1;
+2012-08-20 5:30:30 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:30:30 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "MJS_120814_23" LIMIT 0,1;
+2012-08-20 5:30:30 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "第２４回放送！！\n夏休みの宿題は最初にやる派？\n後にやる派？",`field01` = "24",`field02` = "8/21",`field03` = "MJS_120814_23",`field04` = "",`id` = "82" WHERE id = "82"
+2012-08-20 5:30:30 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "82" && name = "レインボウ" LIMIT 0,1;
+2012-08-20 5:30:58 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:30:58 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:30:58 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "yaroo_120822_8" LIMIT 0,1;
+2012-08-20 5:30:58 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "男気溢れるラジオの第８回！！\n  今回もゲストに「30－DELUX」の「天野博一」が登場！！",`field01` = "8",`field02` = "8/22",`field03` = "yaroo_120822_8",`field04` = "",`id` = "86" WHERE id = "86"
+2012-08-20 5:30:58 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "86" && name = "YAROO" LIMIT 0,1;
+2012-08-20 5:31:22 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:31:22 db [debug(1)] SELECT * FROM pokela_blog_master WHERE name = "更新案内" LIMIT 0,1;
+2012-08-20 5:31:22 db [debug(1)] SELECT * FROM pokela_blog_entry WHERE field03 = "yaroo_120822_8" LIMIT 0,1;
+2012-08-20 5:31:22 db [debug(1)] UPDATE pokela_blog_entry SET `blog_id` = "2",`content` = "男気溢れるラジオの第８回！！\n今回もゲストに「30－DELUX」の「天野博一」が登場！！",`field01` = "8",`field02` = "8/22",`field03` = "yaroo_120822_8",`field04` = "",`id` = "86" WHERE id = "86"
+2012-08-20 5:31:22 db [debug(1)] SELECT * FROM pokela_blog_category WHERE entry_id = "86" && name = "YAROO" LIMIT 0,1;
